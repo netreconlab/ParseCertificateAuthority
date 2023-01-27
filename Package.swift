@@ -11,6 +11,11 @@ let package = Package(
         .tvOS(.v13),
         .watchOS(.v6)
     ],
+    products: [
+        .library(
+            name: "ParseCertificateAuthority",
+            targets: ["ParseCertificateAuthority"])
+    ],
     dependencies: [
         .package(url: "https://github.com/netreconlab/Parse-Swift.git",
                  .upToNextMajor(from: "5.0.0-beta.6"))
