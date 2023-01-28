@@ -31,7 +31,7 @@ import PackageDescription
 let package = Package(
     name: "YOUR_PROJECT_NAME",
     dependencies: [
-        .package(url: "https://github.com/netreconlab/ParseCertificateAuthority", .upToNextMajor(from: "0.0.1")),
+        .package(url: "https://github.com/netreconlab/ParseCertificateAuthority", .upToNextMajor(from: "0.1.0")),
     ]
 )
 ```
