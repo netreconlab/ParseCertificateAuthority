@@ -207,8 +207,10 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         do {
             _ = try await object.getCertificates(user)
         } catch {
+            #if !os(Linux) && !os(Android) && !os(Windows)
             let nsError = error as NSError
             XCTAssertTrue(nsError.userInfo.description.contains("Expected to decode String"))
+            #endif
         }
     }
 
@@ -279,8 +281,10 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         do {
             _ = try await object.requestNewCertificates(user)
         } catch {
+            #if !os(Linux) && !os(Android) && !os(Windows)
             let nsError = error as NSError
             XCTAssertTrue(nsError.userInfo.description.contains("Expected to decode String"))
+            #endif
         }
     }
 
@@ -312,8 +316,10 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         do {
             _ = try await object.requestNewCertificates(user)
         } catch {
+            #if !os(Linux) && !os(Android) && !os(Windows)
             let nsError = error as NSError
             XCTAssertTrue(nsError.userInfo.description.contains("Expected to decode String"))
+            #endif
         }
     }
 
@@ -564,4 +570,5 @@ final class ParseCertificateAuthorityTests: XCTestCase {
             XCTAssertTrue(parseError.message.contains("500"))
         }
     }
+
 }
