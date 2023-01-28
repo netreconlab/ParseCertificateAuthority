@@ -13,7 +13,7 @@
 
 Send CSR's and retreive certificates to/from `ca-server`'s from your own Swift based client and server apps. `Certificatable` allows any object to support certificates while `ParseCertificatable` allows any [ParseObject](https://netreconlab.github.io/Parse-Swift/release/documentation/parseswift/parseobject) from [Parse-Swift](https://github.com/netreconlab/Parse-Swift).
 
-## Software Designed for `ca-server`
+## `ParseCertificateAuthority` is Designed to Work With `ca-server`
 - [ca-server](https://github.com/netreconlab/ParseCertificateAuthority) - A certificate authority(CA) that can turn CSR's into certificates
 - [CertificateSigningRequest](https://github.com/cbaker6/CertificateSigningRequest) - Generate CSR's on Swift clients and servers that can later be signed by `ca-server`
 - [Parse-Swift](https://github.com/netreconlab/Parse-Swift) - Write Parse client apps in Swift. When coupled with [ParseCertificateAuthority](https://github.com/netreconlab/ParseCertificateAuthority) and [CertificateSigningRequest](https://github.com/cbaker6/CertificateSigningRequest), provides the complete client-side stack for generating CSR's, sending/receiving certificates to/from `ca-server`
