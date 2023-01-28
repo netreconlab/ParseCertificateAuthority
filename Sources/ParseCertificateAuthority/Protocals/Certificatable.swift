@@ -35,7 +35,7 @@ public extension Certificatable {
 
     /**
      Determine if an object has a root CA certificate.
-     - returns: **true** if the object has the certificate, **false** otherwise.
+     - returns: **true** if the object has a value for `rootCertificate`, **false** otherwise.
      */
     func hasRootCertificate() -> Bool {
         self.rootCertificate != nil
@@ -43,7 +43,7 @@ public extension Certificatable {
 
     /**
      Determine if an object has a certificate.
-     - returns: **true** if the object has the certificate, **false** otherwise.
+     - returns: **true** if the object has a value for `certificate`, **false** otherwise.
      */
     func hasCertificate() -> Bool {
         self.certificate != nil
