@@ -1,8 +1,17 @@
 # ParseCertificateAuthority
 
-Send CSR's and retreive certificates to/from `ca-server` from [Parse-Swift](https://github.com/netreconlab/Parse-Swift) based clients and servers.
+[![Documentation](http://img.shields.io/badge/read-docs-2196f3.svg)](https://swiftpackageindex.com/netreconlab/ParseCertificateAuthority/documentation)
+[![Tuturiol](http://img.shields.io/badge/read-tuturials-2196f3.svg)](https://netreconlab.github.io/ParseCertificateAuthority/release/tutorials/parsecertificateauthority/)
+[![Build Status CI](https://github.com/netreconlab/ParseCertificateAuthority/workflows/ci/badge.svg?branch=main)](https://github.com/netreconlab/ParseCertificateAuthority/actions?query=workflow%3Aci+branch%3Amain)
+[![release](https://github.com/netreconlab/ParseCertificateAuthority/actions/workflows/release.yml/badge.svg)](https://github.com/netreconlab/ParseCertificateAuthority/actions/workflows/release.yml)
+[![codecov](https://codecov.io/gh/netreconlab/ParseCertificateAuthority/branch/main/graph/badge.svg?token=RC3FLU6BGW)](https://codecov.io/gh/netreconlab/ParseCertificateAuthority)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/netreconlab/ParseCertificateAuthority/blob/main/LICENSE)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fnetreconlab%2FParseCertificateAuthority%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/netreconlab/ParseCertificateAuthority)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fnetreconlab%2FParseCertificateAuthority%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/netreconlab/ParseCertificateAuthority)
 
 ---
+
+Send CSR's and retreive certificates to/from `ca-server` from [Parse-Swift](https://github.com/netreconlab/Parse-Swift) based clients and servers.
 
 ## Software Designed for `ca-server`
 - [ca-server](https://github.com/netreconlab/ParseCertificateAuthority) - A certificate authority(CA) that can turn CSR's into certificates
@@ -58,4 +67,43 @@ struct Installation: ParseInstallation, ParseCertificatable {
 ```
 
 ## Creating a New Certificate From a CSR
-Once you have a CSR from a package like [CertificateSigningRequest](https://github.com/cbaker6/CertificateSigningRequest), you can create an account for the current `ParseUser` and send it to a [ca-server](https://github.com/netreconlab/ParseCertificateAuthority)
+Once you have a CSR from a package like [CertificateSigningRequest](https://github.com/cbaker6/CertificateSigningRequest), you can create an account for the current `ParseUser` automatically and send the CSR to a [ca-server](https://github.com/netreconlab/ParseCertificateAuthority) by doing the following:
+
+```swift
+do {
+    let user = User.current // Some user type that conforms to `ParseUser`.
+    let (certificate, rootCertificate) = try await getCertificates(user,
+                                                                   object: installation)
+    if installation.certificate != certificate || installation.rootCertificate != rootCertificate {
+        installation.certificate = certificate
+        installation.rootCertificate = rootCertificate
+        try await installation.save()
+        
+        // Notify the user their installation has been updated
+    }
+} catch {
+    // Handle error
+}
+```
+
+## Requesting a New Certificate Be Generated for an Existing CSR
+Creating a new certificate for a CSR can be useful when a certificate has expired. To generage a new certificate, do the following:
+
+```swift
+do {
+    let user = User.current // Some user type that conforms to `ParseUser`.
+    let (certificate, rootCertificate) = try await requestNewCertificates(user,
+                                                                          object: installation)
+    guard let certificate = certificate,
+          let rootCertificate = rootCertificate else {
+        let error = ParseError(code: .otherCause,
+                               message: "Could not get new certificates")
+        return ParseHookResponse<[String]>(error: error)
+    }
+    
+    // Notify the user their installation has been updated
+} catch {
+    // Handle error
+}
+```
+
