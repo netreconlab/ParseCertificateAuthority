@@ -1,0 +1,9 @@
+{
+  "bundleDisplayName" : "ParseCertificateAuthority",
+  "bundleIdentifier" : "edu.uky.cs.netreconlab.ParseCertificateAuthority",
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}
