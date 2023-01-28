@@ -72,6 +72,7 @@ Once you have a CSR from a package like [CertificateSigningRequest](https://gith
 ```swift
 do {
     let user = User.current // Some user type that conforms to `ParseUser`.
+    let installation = Installation.current
     let (certificate, rootCertificate) = try await getCertificates(user,
                                                                    object: installation)
     if installation.certificate != certificate || installation.rootCertificate != rootCertificate {
@@ -79,7 +80,7 @@ do {
         installation.rootCertificate = rootCertificate
         try await installation.save()
         
-        // Notify the user their installation has been updated
+        // Notify the user their object has been updated with the certificates
     }
 } catch {
     // Handle error
@@ -92,16 +93,17 @@ Creating a new certificate for a CSR can be useful when a certificate has expire
 ```swift
 do {
     let user = User.current // Some user type that conforms to `ParseUser`.
+    let installation = Installation.current
     let (certificate, rootCertificate) = try await requestNewCertificates(user,
                                                                           object: installation)
     guard let certificate = certificate,
           let rootCertificate = rootCertificate else {
         let error = ParseError(code: .otherCause,
                                message: "Could not get new certificates")
-        return ParseHookResponse<[String]>(error: error)
+        return
     }
     
-    // Notify the user their installation has been updated
+    // Notify the user their object has been updated with the certificates
 } catch {
     // Handle error
 }
