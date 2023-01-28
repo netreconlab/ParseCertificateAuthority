@@ -2,16 +2,17 @@ import XCTest
 @testable import ParseCertificateAuthority
 import ParseSwift
 
+// swiftlint:disable:next type_body_length
 final class ParseCertificateAuthorityTests: XCTestCase {
-    
+
     struct Installation: ParseInstallation, ParseCertificatable {
-        
+
         // These are required by ParseCertificatable
         var rootCertificate: String?
         var certificate: String?
         var csr: String?
         var certificateId: String?
-        
+
         // These are required by ParseObject
         var objectId: String?
         var createdAt: Date?
@@ -79,6 +80,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
     }
 
     func testConfigureFrameworkBadRootPath() throws {
+        // swiftlint:disable:next line_length
         XCTAssertThrowsError(try ParseCertificateAuthorityConfiguration(caURLString: "http://certificate-authority:3000",
                                                                         caRootCertificatePath: " - $",
                                                                         caCertificatesPath: "/certificates/",
@@ -86,6 +88,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
     }
 
     func testConfigureFrameworkBadCertPath() throws {
+        // swiftlint:disable:next line_length
         XCTAssertThrowsError(try ParseCertificateAuthorityConfiguration(caURLString: "http://certificate-authority:3000",
                                                                         caRootCertificatePath: "/ca_certificate",
                                                                         caCertificatesPath: " - $",
@@ -93,6 +96,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
     }
 
     func testConfigureFrameworkBadUserPath() throws {
+        // swiftlint:disable:next line_length
         XCTAssertThrowsError(try ParseCertificateAuthorityConfiguration(caURLString: "http://certificate-authority:3000",
                                                                         caRootCertificatePath: "/ca_certificate",
                                                                         caCertificatesPath: "/certificates/",
@@ -199,7 +203,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 200)
         }
-        
+
         do {
             _ = try await object.getCertificates(user)
         } catch {
@@ -271,7 +275,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 200)
         }
-        
+
         do {
             _ = try await object.requestNewCertificates(user)
         } catch {
@@ -304,7 +308,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 200)
         }
-        
+
         do {
             _ = try await object.requestNewCertificates(user)
         } catch {
@@ -394,7 +398,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 200)
         }
-        
+
         let body = CAServerBody(user: userId,
                                 certificateId: certificateId,
                                 csr: csr)
@@ -436,7 +440,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 200)
         }
-        
+
         let body = CAServerBody(user: userId,
                                 certificateId: certificateId,
                                 csr: csr)
@@ -478,7 +482,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 200)
         }
-        
+
         let body = CAServerBody(user: userId,
                                 certificateId: certificateId,
                                 csr: csr)
@@ -512,7 +516,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 500)
         }
-        
+
         do {
             try await object.verifyAndCreateUserOnCA(userId: userId,
                                                      createUserAccountIfNeeded: true)
@@ -548,7 +552,7 @@ final class ParseCertificateAuthorityTests: XCTestCase {
         MockURLProtocol.mockRequests { _ in
             return MockURLResponse(data: encoded, statusCode: 500)
         }
-        
+
         do {
             try await object.verifyAndCreateUserOnCA(userId: userId,
                                                      createUserAccountIfNeeded: false)

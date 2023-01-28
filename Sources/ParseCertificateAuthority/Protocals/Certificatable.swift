@@ -49,7 +49,9 @@ public extension Certificatable {
     /**
      Get/create certificates if an object is missing them.
      - parameter userId: The unique user id to create the certificate for.
-     - parameter createUserAccountIfNeeded: If **true**, attempts to create an account for the `userId` if the account currently does not exist. If **false** and the account does not exist, will throw an error. Defaults to **true**.
+     - parameter createUserAccountIfNeeded: If **true**, attempts to create an
+     account for the `userId` if the account currently does not exist. If **false** and the
+     account does not exist, will throw an error. Defaults to **true**.
      - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
      - throws: An error of `ParseError` type.
      - note: This is useful when certificates need to be created for the first time. If an object
@@ -101,7 +103,9 @@ public extension Certificatable {
     /**
      Requests new certificates without checking to see if an object already has them.
      - parameter userId: The unique user id to create the certificate for.
-     - parameter createUserAccountIfNeeded: If **true**, attempts to create an account for the `userId` if the account currently does not exist. If **false** and the account does not exist, will throw an error. Defaults to **false**.
+     - parameter createUserAccountIfNeeded: If **true**, attempts to create an
+     account for the `userId` if the account currently does not exist. If **false** and the
+     account does not exist, will throw an error. Defaults to **false**.
      - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
      - throws: An error of `ParseError` type.
      - note: This is useful for when certificates have expired.
