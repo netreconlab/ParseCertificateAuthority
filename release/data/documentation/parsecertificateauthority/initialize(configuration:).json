@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "Initialize the framework with a specific confguration.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -107,6 +113,25 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The configuration to use for the framework.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "configuration"
+        }
+      ]
     }
   ],
   "schemaVersion" : {
@@ -186,7 +211,10 @@
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/initialize(configuration:)": {
   "abstract" : [
-
+    {
+      "text" : "Initialize the framework with a specific confguration.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -14,24 +14,69 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/certificate",
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/certificate",
                 "title" : "var certificate: String?",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/certificateid",
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/certificateid",
                 "title" : "var certificateId: String?",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/csr",
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/csr",
                 "title" : "var csr: String?",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/rootcertificate",
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/rootcertificate",
                 "title" : "var rootCertificate: String?",
                 "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/getcertificates(_:createuseraccountifneeded:)",
+                "title" : "func getCertificates(String?, createUserAccountIfNeeded: Bool) async throws -> (String?, String?)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/hascertificate()",
+                "title" : "func hasCertificate() -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/hasrootcertificate()",
+                "title" : "func hasRootCertificate() -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/parsecertificateauthority\/certificatable\/requestnewcertificates(_:createuseraccountifneeded:)",
+                "title" : "func requestNewCertificates(String?, createUserAccountIfNeeded: Bool) async throws -> (String?, String?)",
+                "type" : "method"
+              }
+            ],
+            "path" : "\/documentation\/parsecertificateauthority\/certificatable",
+            "title" : "Certificatable",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/getcertificates(_:createuseraccountifneeded:)",
+                "title" : "func getCertificates<T>(T?, createUserAccountIfNeeded: Bool) async throws -> (String?, String?)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/requestnewcertificates(_:createuseraccountifneeded:)",
+                "title" : "func requestNewCertificates<T>(T?, createUserAccountIfNeeded: Bool) async throws -> (String?, String?)",
+                "type" : "method"
               }
             ],
             "path" : "\/documentation\/parsecertificateauthority\/parsecertificatable",
@@ -91,28 +136,8 @@
             "type" : "groupMarker"
           },
           {
-            "path" : "\/documentation\/parsecertificateauthority\/getcertificates(_:object:)",
-            "title" : "func getCertificates<T, U>(T?, object: U?) async throws -> (String?, String?)",
-            "type" : "func"
-          },
-          {
-            "path" : "\/documentation\/parsecertificateauthority\/hascertificate(_:)",
-            "title" : "func hasCertificate<T>(T?) -> Bool",
-            "type" : "func"
-          },
-          {
-            "path" : "\/documentation\/parsecertificateauthority\/hasrootcertificate(_:)",
-            "title" : "func hasRootCertificate<T>(T?) -> Bool",
-            "type" : "func"
-          },
-          {
             "path" : "\/documentation\/parsecertificateauthority\/initialize(configuration:)",
             "title" : "func initialize(configuration: ParseCertificateAuthorityConfiguration)",
-            "type" : "func"
-          },
-          {
-            "path" : "\/documentation\/parsecertificateauthority\/requestnewcertificates(_:object:)",
-            "title" : "func requestNewCertificates<T, U>(T?, object: U?) async throws -> (String?, String?)",
             "type" : "func"
           }
         ],

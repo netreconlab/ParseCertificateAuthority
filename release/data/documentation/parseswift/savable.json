@@ -169,7 +169,7 @@
       "type" : "codeVoice"
     },
     {
-      "text" : " protocol have special properties to",
+      "text" : " protocol are",
       "type" : "text"
     },
     {
@@ -177,7 +177,32 @@
       "type" : "text"
     },
     {
-      "text" : "support certificates.",
+      "code" : "ParseObject",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "’s that have special properties and methods to support",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "certificates and communicating with a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -1038,6 +1063,18 @@
   "title" : "save(options:)",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/savable\/save(options:)"
+},
+"https://github.com/netreconlab/ca-server": {
+  "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+  "title" : "ca-server",
+  "titleInlineContent" : [
+    {
+      "text" : "ca-server",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/netreconlab\/ca-server"
 }
 }
 }

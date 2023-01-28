@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The unique identifier for the certificate",
+      "text" : "The certifcate made from the ",
+      "type" : "text"
+    },
+    {
+      "code" : "csr",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -9,17 +17,17 @@
     "paths" : [
       [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable\/certificateId"
+    "url" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable\/certificate"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:25ParseCertificateAuthority0A14CertificatableP13certificateIdSSSgvp",
+    "externalID" : "s:25ParseCertificateAuthority14CertificatableP11certificateSSSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,7 +39,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "certificateId"
+        "text" : "certificate"
       },
       {
         "kind" : "text",
@@ -56,7 +64,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "certificateId"
+    "title" : "certificate"
   },
   "primaryContentSections" : [
     {
@@ -79,7 +87,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "certificateId"
+              "text" : "certificate"
             },
             {
               "kind" : "text",
@@ -97,6 +105,14 @@
             {
               "kind" : "keyword",
               "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "set"
             },
             {
               "kind" : "text",
@@ -119,7 +135,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/parsecertificateauthority\/parsecertificatable\/certificateid"
+        "\/documentation\/parsecertificateauthority\/certificatable\/certificate"
       ],
       "traits" : [
         {
@@ -141,18 +157,18 @@
   "type" : "topic",
   "url" : "\/documentation\/parsecertificateauthority"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificatable": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/Certificatable": {
   "abstract" : [
     {
       "text" : "Objects that conform to the ",
       "type" : "text"
     },
     {
-      "code" : "ParseCertificatable",
+      "code" : "Certificatable",
       "type" : "codeVoice"
     },
     {
-      "text" : " protocol have special properties to",
+      "text" : " protocol have special properties",
       "type" : "text"
     },
     {
@@ -160,7 +176,20 @@
       "type" : "text"
     },
     {
-      "text" : "support certificates.",
+      "text" : "and methods to support certificates and communicating with a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -175,26 +204,34 @@
     },
     {
       "kind" : "identifier",
-      "text" : "ParseCertificatable"
+      "text" : "Certificatable"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "ParseCertificatable"
+      "text" : "Certificatable"
     }
   ],
   "role" : "symbol",
-  "title" : "ParseCertificatable",
+  "title" : "Certificatable",
   "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/parsecertificatable"
+  "url" : "\/documentation\/parsecertificateauthority\/certificatable"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificatable/certificateId": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/Certificatable/certificate": {
   "abstract" : [
     {
-      "text" : "The unique identifier for the certificate",
+      "text" : "The certifcate made from the ",
+      "type" : "text"
+    },
+    {
+      "code" : "csr",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -209,7 +246,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "certificateId"
+      "text" : "certificate"
     },
     {
       "kind" : "text",
@@ -225,13 +262,25 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable\/certificateId",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable\/certificate",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
-  "title" : "certificateId",
+  "title" : "certificate",
   "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/certificateid"
+  "url" : "\/documentation\/parsecertificateauthority\/certificatable\/certificate"
+},
+"https://github.com/netreconlab/ca-server": {
+  "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+  "title" : "ca-server",
+  "titleInlineContent" : [
+    {
+      "text" : "ca-server",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/netreconlab\/ca-server"
 }
 }
 }

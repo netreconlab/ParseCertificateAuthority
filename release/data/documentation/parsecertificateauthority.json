@@ -34,6 +34,7 @@
   "topicSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable"
       ],
       "title" : "Protocols"
@@ -52,11 +53,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/getCertificates(_:object:)",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/hasCertificate(_:)",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/hasRootCertificate(_:)",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/initialize(configuration:)",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/requestNewCertificates(_:object:)"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/initialize(configuration:)"
       ],
       "title" : "Functions"
     }
@@ -86,6 +83,69 @@
   "type" : "topic",
   "url" : "\/documentation\/parsecertificateauthority"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/Certificatable": {
+  "abstract" : [
+    {
+      "text" : "Objects that conform to the ",
+      "type" : "text"
+    },
+    {
+      "code" : "Certificatable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " protocol have special properties",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "and methods to support certificates and communicating with a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Certificatable"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Certificatable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Certificatable",
+  "type" : "topic",
+  "url" : "\/documentation\/parsecertificateauthority\/certificatable"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificatable": {
   "abstract" : [
     {
@@ -97,7 +157,7 @@
       "type" : "codeVoice"
     },
     {
-      "text" : " protocol have special properties to",
+      "text" : " protocol are",
       "type" : "text"
     },
     {
@@ -105,7 +165,32 @@
       "type" : "text"
     },
     {
-      "text" : "support certificates.",
+      "code" : "ParseObject",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "’s that have special properties and methods to support",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "certificates and communicating with a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -231,225 +316,12 @@
   "type" : "topic",
   "url" : "\/documentation\/parsecertificateauthority\/configuration"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/getCertificates(_:object:)": {
-  "abstract" : [
-    {
-      "text" : "Get\/create certificates if an object is missing them.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "getCertificates"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "U"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority15getCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1TL_xmfp",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : "?, "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "object"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority15getCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1UL_q_mfp",
-      "text" : "U"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> ("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?, "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/getCertificates(_:object:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "getCertificates(_:object:)",
-  "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/getcertificates(_:object:)"
-},
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/hasCertificate(_:)": {
-  "abstract" : [
-    {
-      "text" : "Determine if an object has a certificate.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "hasCertificate"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority03hasB0ySbxSgAA0A14CertificatableRzlF1TL_xmfp",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/hasCertificate(_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "hasCertificate(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/hascertificate(_:)"
-},
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/hasRootCertificate(_:)": {
-  "abstract" : [
-    {
-      "text" : "Determine if an object has a root CA certificate.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "hasRootCertificate"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority07hasRootB0ySbxSgAA0A14CertificatableRzlF1TL_xmfp",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/hasRootCertificate(_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "hasRootCertificate(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/hasrootcertificate(_:)"
-},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/initialize(configuration:)": {
   "abstract" : [
-
+    {
+      "text" : "Initialize the framework with a specific confguration.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -493,113 +365,17 @@
   "type" : "topic",
   "url" : "\/documentation\/parsecertificateauthority\/initialize(configuration:)"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/requestNewCertificates(_:object:)": {
-  "abstract" : [
+"https://github.com/netreconlab/ca-server": {
+  "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+  "title" : "ca-server",
+  "titleInlineContent" : [
     {
-      "text" : "Requests new certificates without checking to see if an object already has them.",
+      "text" : "ca-server",
       "type" : "text"
     }
   ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "requestNewCertificates"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "U"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1TL_xmfp",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : "?, "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "object"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1UL_q_mfp",
-      "text" : "U"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> ("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?, "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/requestNewCertificates(_:object:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "requestNewCertificates(_:object:)",
-  "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/requestnewcertificates(_:object:)"
+  "type" : "link",
+  "url" : "https:\/\/github.com\/netreconlab\/ca-server"
 }
 }
 }

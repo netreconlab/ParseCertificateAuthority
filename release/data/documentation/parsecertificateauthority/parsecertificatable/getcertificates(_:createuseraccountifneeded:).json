@@ -1,24 +1,26 @@
 {
   "abstract" : [
     {
-      "text" : "Requests new certificates without checking to see if an object already has them.",
+      "text" : "Get\/create certificates if an object is missing them.",
       "type" : "text"
     }
   ],
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/requestNewCertificates(_:object:)"
+    "url" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable\/getCertificates(_:createUserAccountIfNeeded:)"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF",
+    "extendedModule" : "ParseCertificateAuthority",
+    "externalID" : "s:25ParseCertificateAuthority0A14CertificatablePAAE15getCertificates_25createUserAccountIfNeededSSSg_AFtqd__Sg_SbtYaK0A5Swift0aH0Rd__lF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -30,7 +32,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "requestNewCertificates"
+        "text" : "getCertificates"
       },
       {
         "kind" : "text",
@@ -42,19 +44,11 @@
       },
       {
         "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "genericParameter",
-        "text" : "U"
-      },
-      {
-        "kind" : "text",
         "text" : ">("
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1TL_xmfp",
+        "preciseIdentifier" : "s:25ParseCertificateAuthority0A14CertificatablePAAE15getCertificates_25createUserAccountIfNeededSSSg_AFtqd__Sg_SbtYaK0A5Swift0aH0Rd__lF1TL_qd__mfp",
         "text" : "T"
       },
       {
@@ -63,7 +57,7 @@
       },
       {
         "kind" : "externalParam",
-        "text" : "object"
+        "text" : "createUserAccountIfNeeded"
       },
       {
         "kind" : "text",
@@ -71,12 +65,12 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1UL_q_mfp",
-        "text" : "U"
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
       },
       {
         "kind" : "text",
-        "text" : "?) "
+        "text" : ") "
       },
       {
         "kind" : "keyword",
@@ -119,9 +113,9 @@
       }
     ],
     "role" : "symbol",
-    "roleHeading" : "Function",
-    "symbolKind" : "func",
-    "title" : "requestNewCertificates(_:object:)"
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "getCertificates(_:createUserAccountIfNeeded:)"
   },
   "primaryContentSections" : [
     {
@@ -144,7 +138,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "requestNewCertificates"
+              "text" : "getCertificates"
             },
             {
               "kind" : "text",
@@ -153,14 +147,6 @@
             {
               "kind" : "genericParameter",
               "text" : "T"
-            },
-            {
-              "kind" : "text",
-              "text" : ", "
-            },
-            {
-              "kind" : "genericParameter",
-              "text" : "U"
             },
             {
               "kind" : "text",
@@ -184,7 +170,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1TL_xmfp",
+              "preciseIdentifier" : "s:25ParseCertificateAuthority0A14CertificatablePAAE15getCertificates_25createUserAccountIfNeededSSSg_AFtqd__Sg_SbtYaK0A5Swift0aH0Rd__lF1TL_qd__mfp",
               "text" : "T"
             },
             {
@@ -193,7 +179,7 @@
             },
             {
               "kind" : "externalParam",
-              "text" : "object"
+              "text" : "createUserAccountIfNeeded"
             },
             {
               "kind" : "text",
@@ -201,12 +187,12 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1UL_q_mfp",
-              "text" : "U"
+              "preciseIdentifier" : "s:Sb",
+              "text" : "Bool"
             },
             {
               "kind" : "text",
-              "text" : "?) "
+              "text" : " = true) "
             },
             {
               "kind" : "keyword",
@@ -263,24 +249,6 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:10ParseSwift0A4UserP",
               "text" : "ParseUser"
-            },
-            {
-              "kind" : "text",
-              "text" : ", "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "U"
-            },
-            {
-              "kind" : "text",
-              "text" : " : "
-            },
-            {
-              "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:25ParseCertificateAuthority0A14CertificatableP",
-              "text" : "ParseCertificatable"
             }
           ]
         }
@@ -337,22 +305,77 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "The ",
+                  "text" : "If ",
                   "type" : "text"
                 },
                 {
-                  "code" : "ParseCertificatable",
+                  "inlineContent" : [
+                    {
+                      "text" : "true",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : ", attempts to create an",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "account for the ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "user",
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : " conforming object to check.",
+                  "text" : " if the account currently does not exist. If ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "false",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : " and the",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "account does not exist, will throw an error. Defaults to ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "true",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "strong"
+                },
+                {
+                  "text" : ".",
                   "type" : "text"
                 }
               ],
               "type" : "paragraph"
             }
           ],
-          "name" : "object"
+          "name" : "createUserAccountIfNeeded"
         }
       ]
     },
@@ -393,7 +416,15 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "This is useful for when certificates have expired.",
+                  "text" : "This is useful when certificates need to be created for the first time. If an object",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "already has both certificates, it will simply return the current certificates.",
                   "type" : "text"
                 }
               ],
@@ -419,7 +450,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/parsecertificateauthority\/requestnewcertificates(_:object:)"
+        "\/documentation\/parsecertificateauthority\/parsecertificatable\/getcertificates(_:createuseraccountifneeded:)"
       ],
       "traits" : [
         {
@@ -452,7 +483,7 @@
       "type" : "codeVoice"
     },
     {
-      "text" : " protocol have special properties to",
+      "text" : " protocol are",
       "type" : "text"
     },
     {
@@ -460,7 +491,32 @@
       "type" : "text"
     },
     {
-      "text" : "support certificates.",
+      "code" : "ParseObject",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "’s that have special properties and methods to support",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "certificates and communicating with a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -491,10 +547,10 @@
   "type" : "topic",
   "url" : "\/documentation\/parsecertificateauthority\/parsecertificatable"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/requestNewCertificates(_:object:)": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificatable/getCertificates(_:createUserAccountIfNeeded:)": {
   "abstract" : [
     {
-      "text" : "Requests new certificates without checking to see if an object already has them.",
+      "text" : "Get\/create certificates if an object is missing them.",
       "type" : "text"
     }
   ],
@@ -509,7 +565,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "requestNewCertificates"
+      "text" : "getCertificates"
     },
     {
       "kind" : "text",
@@ -521,19 +577,11 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "U"
-    },
-    {
-      "kind" : "text",
       "text" : ">("
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1TL_xmfp",
+      "preciseIdentifier" : "s:25ParseCertificateAuthority0A14CertificatablePAAE15getCertificates_25createUserAccountIfNeededSSSg_AFtqd__Sg_SbtYaK0A5Swift0aH0Rd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -542,7 +590,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "object"
+      "text" : "createUserAccountIfNeeded"
     },
     {
       "kind" : "text",
@@ -550,12 +598,12 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:25ParseCertificateAuthority22requestNewCertificates_6objectSSSg_ADtxSg_q_SgtYaK0A5Swift0A4UserRzAA0A14CertificatableR_r0_lF1UL_q_mfp",
-      "text" : "U"
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
     },
     {
       "kind" : "text",
-      "text" : "?) "
+      "text" : ") "
     },
     {
       "kind" : "keyword",
@@ -592,12 +640,12 @@
       "text" : "?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/requestNewCertificates(_:object:)",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable\/getCertificates(_:createUserAccountIfNeeded:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "requestNewCertificates(_:object:)",
+  "title" : "getCertificates(_:createUserAccountIfNeeded:)",
   "type" : "topic",
-  "url" : "\/documentation\/parsecertificateauthority\/requestnewcertificates(_:object:)"
+  "url" : "\/documentation\/parsecertificateauthority\/parsecertificatable\/getcertificates(_:createuseraccountifneeded:)"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseUser": {
   "abstract" : [
@@ -680,6 +728,18 @@
   "title" : "ParseUser",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parseuser"
+},
+"https://github.com/netreconlab/ca-server": {
+  "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",
+  "title" : "ca-server",
+  "titleInlineContent" : [
+    {
+      "text" : "ca-server",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/netreconlab\/ca-server"
 }
 }
 }
