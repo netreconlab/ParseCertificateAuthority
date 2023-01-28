@@ -17,7 +17,7 @@ import ParseSwift
 public protocol ParseCertificatable: ParseObject, Certificatable { }
 
 public extension ParseCertificatable {
-    
+
     /**
      Requests new certificates without checking to see if an object already has them.
      - parameter user: The `ParseUser` conforming user to create the certificate for.
