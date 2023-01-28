@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct CAServerResponse: Decodable {
+struct CAServerResponse: Codable {
+    var user: String
     var certificateId: String
     var csr: String
     var certificate: String
-    var user: String
     var createdAt: String
     var updatedAt: String
 
