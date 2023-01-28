@@ -1,5 +1,5 @@
 //
-//  CertificateAuthorityServer.swift
+//  ParseCertificateAuthority.swift
 //  Assuage
 //
 //  Created by Esther Max-Onakpoya on 8/19/22.
@@ -46,7 +46,8 @@ public func hasCertificate<T: ParseCertificatable>(_ object: T?) -> Bool {
  Requests new certificates without checking to see if an object already has them.
  - parameter user: The `ParseUser` conforming user to create the certificate for.
  - parameter object: The `ParseCertificatable` conforming object to check.
- - returns: **true** if the object has the certificate, **false** otherwise.
+ - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
+ - throws: An error of `ParseError` type.
  - note: This is useful for when certificates have expired.
  */
 public func requestNewCertificates<T, U>(_ user: T?,
@@ -79,7 +80,15 @@ public func requestNewCertificates<T, U>(_ user: T?,
 
 }
 
-/// Get/create new cert when necessary. Will not create the new cert if it's already in Installation.
+/**
+ Get/create certificates if an object is missing them.
+ - parameter user: The `ParseUser` conforming user to create the certificate for.
+ - parameter object: The `ParseCertificatable` conforming object to check.
+ - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
+ - throws: An error of `ParseError` type.
+ - note: This is useful when certificates need to be created for the first time. If an object
+ already has both certificates, it will simply return the current certificates.
+ */
 public func getCertificates<T, U>(_ user: T?,
                                   // swiftlint:disable:next line_length
                                   object: U?) async throws -> (String?, String?) where T: ParseUser, U: ParseCertificatable {
