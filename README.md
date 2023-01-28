@@ -52,6 +52,7 @@ initialize(configuration: caConfiguration)
 Below is an example of conforming to `ParseCertificatable` if you are using `Parse-Swift`. If you are not using `Parse-Swift`, the process is similar except you conform to `Certificatable` and use the relevant methods. At least one of your `ParseObject` models need to conform to `ParseCertificatable`. A good candidate is a model that already conforms to `ParseInstallatiion` as this is unique per installation on each device.
 
 ```swift
+// Conform to `ParseCertificatable`. If not using Parse-Swift, conform to `Certificatable` instead.
 struct Installation: ParseInstallation, ParseCertificatable {
     var rootCertificate: String?
 
@@ -73,8 +74,7 @@ Once you have a CSR from a package like [CertificateSigningRequest](https://gith
 do {
     let user = User.current // Some user type that conforms to `ParseUser`.
     var installation = Installation.current
-    let (certificate, rootCertificate) = try await getCertificates(user,
-                                                                   object: installation)
+    let (certificate, rootCertificate) = try await installation.getCertificates(user)
     if installation.certificate != certificate || installation.rootCertificate != rootCertificate {
         installation.certificate = certificate
         installation.rootCertificate = rootCertificate
@@ -94,8 +94,7 @@ Creating a new certificate for a CSR can be useful when a certificate has expire
 do {
     let user = User.current // Some user type that conforms to `ParseUser`.
     var installation = Installation.current
-    let (certificate, rootCertificate) = try await requestNewCertificates(user,
-                                                                          object: installation)
+    let (certificate, rootCertificate) = try await installation.requestNewCertificates(user)
     guard let certificate = certificate,
           let rootCertificate = rootCertificate else {
         let error = ParseError(code: .otherCause,
