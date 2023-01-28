@@ -11,7 +11,7 @@
 
 ---
 
-Send CSR's and retreive certificates to/from `ca-server` from [Parse-Swift](https://github.com/netreconlab/Parse-Swift) based clients and servers.
+Send CSR's and retreive certificates to/from `ca-server`'s from your own Swift based client and server apps. `Certificatable` allows any object to support certificates while `ParseCertificatable` allows any [ParseObject](https://netreconlab.github.io/Parse-Swift/release/documentation/parseswift/parseobject) from [Parse-Swift](https://github.com/netreconlab/Parse-Swift).
 
 ## Software Designed for `ca-server`
 - [ca-server](https://github.com/netreconlab/ParseCertificateAuthority) - A certificate authority(CA) that can turn CSR's into certificates
@@ -48,8 +48,8 @@ let caConfiguration = try ParseCertificateAuthorityConfiguration(caURLString: "h
 initialize(configuration: caConfiguration)
 ```
 
-## Choosing a `ParseObject` Model to Conform to `ParseCertificatable`
-At least one of your `ParseObject` models need to conform to `ParseCertificatable`. A good candidate is a model that already conforms to `ParseInstallatiion` as this is unique per installation on each device.
+## Choosing an `Object` or `ParseObject` Model to Conform to `Certificatable` or `ParseCertificatable`
+Below is an example of conforming to `ParseCertificatable` if you are using `Parse-Swift`. If you are not using `Parse-Swift`, the process is similar except you conform to `Certificatable` and use the relevant methods. At least one of your `ParseObject` models need to conform to `ParseCertificatable`. A good candidate is a model that already conforms to `ParseInstallatiion` as this is unique per installation on each device.
 
 ```swift
 struct Installation: ParseInstallation, ParseCertificatable {
