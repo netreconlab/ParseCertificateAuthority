@@ -16,5 +16,4 @@ enum RestMethod: String {
 enum CertificateType: String {
     case root
     case user
-    case other
 }

@@ -7,9 +7,15 @@
 //
 
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import ParseSwift
 
 // MARK: Configure Framework
+
+/// Initialize the framework with a specific confguration.
+/// - parameter configuration: The configuration to use for the framework.
 public func initialize(configuration: ParseCertificateAuthorityConfiguration) {
     ParseCA.configuration = configuration
 }

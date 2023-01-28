@@ -6,9 +6,6 @@
 //
 
 import Foundation
-#if canImport(FoundationNetworking)
-import FoundationNetworking
-#endif
 import ParseSwift
 
 /**
@@ -35,66 +32,31 @@ public extension Certificatable {
 
     /**
      Determine if an object has a root CA certificate.
-     - parameter object: The `Certificatable` conforming object to check.
      - returns: **true** if the object has the certificate, **false** otherwise.
      */
-    func hasRootCertificate<T: Certificatable>(_ object: T?) -> Bool {
-        object?.rootCertificate != nil
+    func hasRootCertificate() -> Bool {
+        self.rootCertificate != nil
     }
 
     /**
      Determine if an object has a certificate.
-     - parameter object: The `Certificatable` conforming object to check.
      - returns: **true** if the object has the certificate, **false** otherwise.
      */
-    func hasCertificate<T: Certificatable>(_ object: T?) -> Bool {
-        object?.certificate != nil
-    }
-
-    /**
-     Requests new certificates without checking to see if an object already has them.
-     - parameter userId: The unique user id to create the certificate for.
-     - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
-     - throws: An error of `ParseError` type.
-     - note: This is useful for when certificates have expired.
-     */
-    func requestNewCertificates(_ userId: String?) async throws -> (String?, String?) {
-
-        guard let userId = userId,
-              let certificateId = self.certificateId,
-              let csr = self.csr else {
-            throw ParseError(code: .otherCause,
-                             // swiftlint:disable:next line_length
-                             message: "Missing user id, certificateId, or csr. User: \(String(describing: userId)); Object: \(self)")
-        }
-
-        try await verifyAndCreateUserOnCA(userId: userId)
-
-        let body = CAServerBody(user: userId,
-                                certificateId: certificateId,
-                                csr: csr)
-        let certificate = try await restfullCertificates(httpMethod: .POST,
-                                                         body: body,
-                                                         certificateType: .user).removingPercentEncoding
-
-        do {
-            let rootCertificate = try await restfullCertificates(httpMethod: .GET, certificateType: .root)
-            return (certificate, rootCertificate.removingPercentEncoding)
-        } catch {
-            return (certificate, nil)
-        }
-
+    func hasCertificate() -> Bool {
+        self.certificate != nil
     }
 
     /**
      Get/create certificates if an object is missing them.
      - parameter userId: The unique user id to create the certificate for.
+     - parameter createUserAccountIfNeeded: If **true**, attempts to create an account for the `userId` if the account currently does not exist. If **false** and the account does not exist, will throw an error. Defaults to **true**.
      - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
      - throws: An error of `ParseError` type.
      - note: This is useful when certificates need to be created for the first time. If an object
      already has both certificates, it will simply return the current certificates.
      */
-    func getCertificates(_ userId: String?) async throws -> (String?, String?) {
+    func getCertificates(_ userId: String?,
+                         createUserAccountIfNeeded: Bool = true) async throws -> (String?, String?) {
 
         guard let userId = userId,
               let certificateId = self.certificateId,
@@ -104,13 +66,15 @@ public extension Certificatable {
                              message: "Missing user id, certificateId, or csr. User:\(String(describing: userId)); Object: \(self)")
         }
 
-        if hasCertificate(self) && hasRootCertificate(self) {
-            throw ParseError(code: .duplicateRequest, message: "Object already has certificates")
+        if let certificate = self.certificate,
+           let rootCertificate = self.rootCertificate {
+            return (certificate, rootCertificate)
         }
 
-        try await verifyAndCreateUserOnCA(userId: userId, createAccountIfNeeded: true)
+        try await verifyAndCreateUserOnCA(userId: userId,
+                                          createUserAccountIfNeeded: createUserAccountIfNeeded)
         var certificate: String?
-        if !hasCertificate(self) {
+        if !hasCertificate() {
             do {
                 certificate = try await restfullCertificates(httpMethod: .GET,
                                                              certificateType: .user,
@@ -123,15 +87,54 @@ public extension Certificatable {
                                                              body: body,
                                                              certificateType: .user)
             }
-            certificate = certificate?.removingPercentEncoding
         }
 
         do {
-            let rootCertificate = try await restfullCertificates(httpMethod: .GET, certificateType: .root)
-            return (certificate, rootCertificate.removingPercentEncoding)
+            let rootCertificate = try await restfullCertificates(httpMethod: .GET,
+                                                                 certificateType: .root)
+            return (certificate, rootCertificate)
         } catch {
             return (certificate, nil)
         }
+    }
+
+    /**
+     Requests new certificates without checking to see if an object already has them.
+     - parameter userId: The unique user id to create the certificate for.
+     - parameter createUserAccountIfNeeded: If **true**, attempts to create an account for the `userId` if the account currently does not exist. If **false** and the account does not exist, will throw an error. Defaults to **false**.
+     - returns: A tuple where the first item is the user certificate and the second item is the root certificate.
+     - throws: An error of `ParseError` type.
+     - note: This is useful for when certificates have expired.
+     */
+    func requestNewCertificates(_ userId: String?,
+                                createUserAccountIfNeeded: Bool = false) async throws -> (String?, String?) {
+
+        guard let userId = userId,
+              let certificateId = self.certificateId,
+              let csr = self.csr else {
+            throw ParseError(code: .otherCause,
+                             // swiftlint:disable:next line_length
+                             message: "Missing user id, certificateId, or csr. User: \(String(describing: userId)); Object: \(self)")
+        }
+
+        try await verifyAndCreateUserOnCA(userId: userId,
+                                          createUserAccountIfNeeded: createUserAccountIfNeeded)
+
+        let body = CAServerBody(user: userId,
+                                certificateId: certificateId,
+                                csr: csr)
+        let certificate = try await restfullCertificates(httpMethod: .POST,
+                                                         body: body,
+                                                         certificateType: .user)
+
+        do {
+            let rootCertificate = try await restfullCertificates(httpMethod: .GET,
+                                                                 certificateType: .root)
+            return (certificate, rootCertificate)
+        } catch {
+            return (certificate, nil)
+        }
+
     }
 
 }
@@ -174,12 +177,12 @@ extension Certificatable {
     }
 
     func verifyAndCreateUserOnCA(userId: String,
-                                 createAccountIfNeeded: Bool = true) async throws {
+                                 createUserAccountIfNeeded: Bool) async throws {
 
         do {
             try await restfullAppUsers(httpMethod: .GET, userId: userId)
         } catch {
-            guard createAccountIfNeeded else {
+            guard createUserAccountIfNeeded else {
                 throw error
             }
             let body = CAServerBody(user: userId)

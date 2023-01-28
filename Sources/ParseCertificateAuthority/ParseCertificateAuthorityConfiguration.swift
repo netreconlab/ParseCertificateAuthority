@@ -10,6 +10,7 @@ import ParseSwift
 
 /// The configuratoin for `ParseCertificateAuthority`.
 public struct ParseCertificateAuthorityConfiguration {
+
     /// The full URL of the **ca-server** to access the root certificate.
     public internal(set) var caRootCertificateURL: URL
     /// The full URL of the **ca-server** to access user certificates.
@@ -45,4 +46,5 @@ public struct ParseCertificateAuthorityConfiguration {
         self.caCertificatesURL = caCertificatesURL
         self.caUsersPathURL = caUsersPathURL
     }
+
 }
