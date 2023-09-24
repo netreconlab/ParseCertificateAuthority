@@ -133,8 +133,8 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()-3stwk",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()-51ej7",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)-15f1x"
       ],
       "title" : "Instance Methods"
     }
@@ -950,7 +950,7 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/savable\/savingtype"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save()-3stwk": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save()-51ej7": {
   "abstract" : [
 
   ],
@@ -974,6 +974,14 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     },
     {
@@ -986,15 +994,15 @@
       "text" : "SavingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()-3stwk",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()-51ej7",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "save()",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/savable\/save()-3stwk"
+  "url" : "\/documentation\/parseswift\/savable\/save()-51ej7"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save(options:)": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save(options:)-15f1x": {
   "abstract" : [
 
   ],
@@ -1044,6 +1052,14 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     },
     {
@@ -1056,13 +1072,13 @@
       "text" : "SavingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)-15f1x",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "save(options:)",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/savable\/save(options:)"
+  "url" : "\/documentation\/parseswift\/savable\/save(options:)-15f1x"
 },
 "https://github.com/netreconlab/ca-server": {
   "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",

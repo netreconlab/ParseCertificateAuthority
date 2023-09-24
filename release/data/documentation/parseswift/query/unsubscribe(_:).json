@@ -64,7 +64,7 @@
       ]
     },
     "extendedModule" : "ParseSwift",
-    "externalID" : "s:10ParseSwift5QueryV11unsubscribeyyqd__KAA0C12SubscribableRd__lF",
+    "externalID" : "s:10ParseSwift5QueryV11unsubscribeyyqd__YaKAA0C12SubscribableRd__lF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -84,7 +84,7 @@
       },
       {
         "kind" : "genericParameter",
-        "text" : "T"
+        "text" : "V"
       },
       {
         "kind" : "text",
@@ -92,12 +92,20 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribeyyqd__KAA0C12SubscribableRd__lF1TL_qd__mfp",
-        "text" : "T"
+        "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribeyyqd__YaKAA0C12SubscribableRd__lF1VL_qd__mfp",
+        "text" : "V"
       },
       {
         "kind" : "text",
         "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "keyword",
@@ -143,7 +151,7 @@
             },
             {
               "kind" : "genericParameter",
-              "text" : "T"
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -167,12 +175,20 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribeyyqd__KAA0C12SubscribableRd__lF1TL_qd__mfp",
-              "text" : "T"
+              "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribeyyqd__YaKAA0C12SubscribableRd__lF1VL_qd__mfp",
+              "text" : "V"
             },
             {
               "kind" : "text",
               "text" : ") "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "async"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "keyword",
@@ -192,7 +208,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "T"
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -417,7 +433,7 @@
     },
     {
       "kind" : "genericParameter",
-      "text" : "T"
+      "text" : "V"
     },
     {
       "kind" : "text",
@@ -425,12 +441,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribeyyqd__KAA0C12SubscribableRd__lF1TL_qd__mfp",
-      "text" : "T"
+      "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribeyyqd__YaKAA0C12SubscribableRd__lF1VL_qd__mfp",
+      "text" : "V"
     },
     {
       "kind" : "text",
       "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "keyword",

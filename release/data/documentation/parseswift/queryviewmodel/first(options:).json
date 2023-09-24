@@ -32,7 +32,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:10ParseSwift14QueryViewModelC5first7optionsyShyAA3APIV6OptionOG_tF",
+    "externalID" : "s:10ParseSwift14QueryViewModelC5first7optionsyShyAA3APIV6OptionOG_tYaF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -74,7 +74,11 @@
       },
       {
         "kind" : "text",
-        "text" : ")"
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
       }
     ],
     "modules" : [
@@ -98,6 +102,19 @@
             "iOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@"
+            },
+            {
+              "kind" : "attribute",
+              "preciseIdentifier" : "s:ScM",
+              "text" : "MainActor"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -140,7 +157,11 @@
             },
             {
               "kind" : "text",
-              "text" : " = [])"
+              "text" : " = []) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "async"
             }
           ]
         }
@@ -435,7 +456,11 @@
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
     }
   ],
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/QueryViewModel\/first(options:)",

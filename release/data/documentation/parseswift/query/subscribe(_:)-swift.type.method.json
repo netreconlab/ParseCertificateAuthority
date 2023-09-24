@@ -52,7 +52,7 @@
       ]
     },
     "extendedModule" : "ParseSwift",
-    "externalID" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ",
+    "externalID" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -80,7 +80,7 @@
       },
       {
         "kind" : "genericParameter",
-        "text" : "T"
+        "text" : "V"
       },
       {
         "kind" : "text",
@@ -88,12 +88,20 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ1TL_qd__mfp",
-        "text" : "T"
+        "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ1VL_qd__mfp",
+        "text" : "V"
       },
       {
         "kind" : "text",
         "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "keyword",
@@ -105,8 +113,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ1TL_qd__mfp",
-        "text" : "T"
+        "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ1VL_qd__mfp",
+        "text" : "V"
       }
     ],
     "modules" : [
@@ -156,7 +164,7 @@
             },
             {
               "kind" : "genericParameter",
-              "text" : "T"
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -180,12 +188,20 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ1TL_qd__mfp",
-              "text" : "T"
+              "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ1VL_qd__mfp",
+              "text" : "V"
             },
             {
               "kind" : "text",
               "text" : ") "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "async"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "keyword",
@@ -197,8 +213,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ1TL_qd__mfp",
-              "text" : "T"
+              "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ1VL_qd__mfp",
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -214,7 +230,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "T"
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -230,6 +246,25 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A custom subscription handler.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "handler"
+        }
+      ]
     },
     {
       "content" : [
@@ -250,25 +285,6 @@
         }
       ],
       "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A custom subscription handler.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "handler"
-        }
-      ]
     },
     {
       "content" : [
@@ -455,7 +471,7 @@
     },
     {
       "kind" : "genericParameter",
-      "text" : "T"
+      "text" : "V"
     },
     {
       "kind" : "text",
@@ -463,12 +479,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ1TL_qd__mfp",
-      "text" : "T"
+      "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ1VL_qd__mfp",
+      "text" : "V"
     },
     {
       "kind" : "text",
       "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "keyword",
@@ -480,8 +504,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__KAA0C12SubscribableRd__lFZ1TL_qd__mfp",
-      "text" : "T"
+      "preciseIdentifier" : "s:10ParseSwift5QueryV9subscribeyqd__qd__YaKAA0C12SubscribableRd__lFZ1VL_qd__mfp",
+      "text" : "V"
     }
   ],
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Query\/subscribe(_:)-swift.type.method",

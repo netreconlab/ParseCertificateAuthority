@@ -142,8 +142,8 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete()-5tyw7",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete(options:)"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete()-3wdvi",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete(options:)-370sk"
       ],
       "title" : "Instance Methods"
     }
@@ -315,7 +315,7 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/deletable\/deletingtype"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Deletable/delete()-5tyw7": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Deletable/delete()-3wdvi": {
   "abstract" : [
 
   ],
@@ -339,6 +339,14 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     },
     {
@@ -351,19 +359,19 @@
       "text" : "DeletingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete()-5tyw7",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete()-3wdvi",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "delete()",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/deletable\/delete()-5tyw7"
+  "url" : "\/documentation\/parseswift\/deletable\/delete()-3wdvi"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Deletable/delete(options:)": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Deletable/delete(options:)-370sk": {
   "abstract" : [
 
   ],
-  "defaultImplementations" : 2,
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -409,6 +417,14 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     },
     {
@@ -421,13 +437,13 @@
       "text" : "DeletingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete(options:)",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Deletable\/delete(options:)-370sk",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "delete(options:)",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/deletable\/delete(options:)"
+  "url" : "\/documentation\/parseswift\/deletable\/delete(options:)-370sk"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser": {
   "abstract" : [

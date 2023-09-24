@@ -107,7 +107,6 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushStatus",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Pointer"
       ],
@@ -133,8 +132,8 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch()-1h0qk",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch(includeKeys:options:)"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch()-2agid",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch(includeKeys:options:)-6xt2n"
       ],
       "title" : "Instance Methods"
     }
@@ -301,7 +300,7 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/fetchable\/fetchingtype"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Fetchable/fetch()-1h0qk": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Fetchable/fetch()-2agid": {
   "abstract" : [
 
   ],
@@ -325,6 +324,14 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     },
     {
@@ -337,19 +344,19 @@
       "text" : "FetchingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch()-1h0qk",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch()-2agid",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetch()",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/fetchable\/fetch()-1h0qk"
+  "url" : "\/documentation\/parseswift\/fetchable\/fetch()-2agid"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Fetchable/fetch(includeKeys:options:)": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Fetchable/fetch(includeKeys:options:)-6xt2n": {
   "abstract" : [
 
   ],
-  "defaultImplementations" : 2,
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -412,6 +419,14 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     },
     {
@@ -424,13 +439,13 @@
       "text" : "FetchingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch(includeKeys:options:)",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Fetchable\/fetch(includeKeys:options:)-6xt2n",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetch(includeKeys:options:)",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/fetchable\/fetch(includekeys:options:)"
+  "url" : "\/documentation\/parseswift\/fetchable\/fetch(includekeys:options:)-6xt2n"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser": {
   "abstract" : [
@@ -462,56 +477,6 @@
   "title" : "ParseCloudUser",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parseclouduser"
-},
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile": {
-  "abstract" : [
-    {
-      "text" : "A ",
-      "type" : "text"
-    },
-    {
-      "code" : "ParseFile",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " object representes a file of binary data stored on the Parse server.",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "This can be a image, video, or anything else that an application needs to reference in a non-relational way.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "ParseFile"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "ParseFile"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "ParseFile",
-  "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parsefile"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseInstallation": {
   "abstract" : [

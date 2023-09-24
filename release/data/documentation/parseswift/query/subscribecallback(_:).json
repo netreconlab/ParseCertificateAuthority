@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Registers the query for live updates, using the default subscription handler,",
+      "text" : "Registers the query for live updates, using the default subscription handler",
       "type" : "text"
     },
     {
@@ -68,7 +68,7 @@
       ]
     },
     "extendedModule" : "ParseSwift",
-    "externalID" : "s:10ParseSwift5QueryV17subscribeCallbackyAA012SubscriptionE0CyxGAA0a4LiveC0CKF",
+    "externalID" : "s:10ParseSwift5QueryV17subscribeCallbackyAA012SubscriptionE0CyxGAA0a4LiveC0CYaKF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -94,6 +94,14 @@
       {
         "kind" : "text",
         "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "keyword",
@@ -187,6 +195,14 @@
             },
             {
               "kind" : "keyword",
+              "text" : "async"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
               "text" : "throws"
             },
             {
@@ -219,6 +235,25 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A specific client.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "client"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -237,25 +272,6 @@
         }
       ],
       "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A specific client.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "client"
-        }
-      ]
     },
     {
       "content" : [
@@ -492,7 +508,7 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Query/subscribeCallback(_:)": {
   "abstract" : [
     {
-      "text" : "Registers the query for live updates, using the default subscription handler,",
+      "text" : "Registers the query for live updates, using the default subscription handler",
       "type" : "text"
     },
     {
@@ -569,6 +585,14 @@
     {
       "kind" : "text",
       "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "keyword",

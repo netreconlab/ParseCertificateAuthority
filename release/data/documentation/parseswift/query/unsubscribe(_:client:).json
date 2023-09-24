@@ -64,7 +64,7 @@
       ]
     },
     "extendedModule" : "ParseSwift",
-    "externalID" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtKAA0C12SubscribableRd__lF",
+    "externalID" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtYaKAA0C12SubscribableRd__lF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -84,7 +84,7 @@
       },
       {
         "kind" : "genericParameter",
-        "text" : "T"
+        "text" : "V"
       },
       {
         "kind" : "text",
@@ -92,8 +92,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtKAA0C12SubscribableRd__lF1TL_qd__mfp",
-        "text" : "T"
+        "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtYaKAA0C12SubscribableRd__lF1VL_qd__mfp",
+        "text" : "V"
       },
       {
         "kind" : "text",
@@ -115,6 +115,14 @@
       {
         "kind" : "text",
         "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "keyword",
@@ -160,7 +168,7 @@
             },
             {
               "kind" : "genericParameter",
-              "text" : "T"
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -184,8 +192,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtKAA0C12SubscribableRd__lF1TL_qd__mfp",
-              "text" : "T"
+              "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtYaKAA0C12SubscribableRd__lF1VL_qd__mfp",
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -211,6 +219,14 @@
             },
             {
               "kind" : "keyword",
+              "text" : "async"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
               "text" : "throws"
             },
             {
@@ -227,7 +243,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "T"
+              "text" : "V"
             },
             {
               "kind" : "text",
@@ -516,7 +532,7 @@
     },
     {
       "kind" : "genericParameter",
-      "text" : "T"
+      "text" : "V"
     },
     {
       "kind" : "text",
@@ -524,8 +540,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtKAA0C12SubscribableRd__lF1TL_qd__mfp",
-      "text" : "T"
+      "preciseIdentifier" : "s:10ParseSwift5QueryV11unsubscribe_6clientyqd___AA0a4LiveC0CtYaKAA0C12SubscribableRd__lF1VL_qd__mfp",
+      "text" : "V"
     },
     {
       "kind" : "text",
@@ -547,6 +563,14 @@
     {
       "kind" : "text",
       "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "keyword",
