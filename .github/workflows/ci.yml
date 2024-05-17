@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 
 env:
-  CI_XCODE: '/Applications/Xcode_15.0.app/Contents/Developer'
+  CI_XCODE: '/Applications/Xcode_15.4.app/Contents/Developer'
 
 concurrency:
    group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,11 +16,11 @@ concurrency:
 
 jobs:
   spm-test:
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v4
-    - name: Use multiple cores
-      run: defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
+    - name: Install SwiftLint
+      run: brew install swiftlint
     - name: Lint
       run: swiftlint --strict
     - name: Build and Test
@@ -36,11 +36,12 @@ jobs:
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE }}
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
       with:
         files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
         env_vars: SPM
         fail_ci_if_error: true
+        token: ${{ secrets.CODECOV_TOKEN }}
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE }}
 
@@ -60,18 +61,17 @@ jobs:
         run: |
           llvm-cov export -format="lcov" .build/x86_64-unknown-linux-gnu/debug/ParseCertificateAuthorityPackageTests.xctest -instr-profile .build/x86_64-unknown-linux-gnu/debug/codecov/default.profdata > info_linux.lcov
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           env_vars: LINUX
           fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   docs:
     timeout-minutes: 20
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
-      - name: Use multiple cores
-        run: defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
       - name: Generate Docs
         run: set -o pipefail && env NSUnbufferedIO=YES Scripts/generate-documentation
         env:
