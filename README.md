@@ -2,7 +2,7 @@
 
 [![Documentation](http://img.shields.io/badge/read-docs-2196f3.svg)](https://swiftpackageindex.com/netreconlab/ParseCertificateAuthority/documentation)
 [![Tuturiol](http://img.shields.io/badge/read-tuturials-2196f3.svg)](https://netreconlab.github.io/ParseCertificateAuthority/release/tutorials/parsecertificateauthority/)
-[![Build Status CI](https://github.com/netreconlab/ParseCertificateAuthority/workflows/ci/badge.svg?branch=main)](https://github.com/netreconlab/ParseCertificateAuthority/actions?query=workflow%3Aci+branch%3Amain)
+[![ci](https://github.com/netreconlab/ParseCertificateAuthority/actions/workflows/ci.yml/badge.svg)](https://github.com/netreconlab/ParseCertificateAuthority/actions/workflows/ci.yml)
 [![release](https://github.com/netreconlab/ParseCertificateAuthority/actions/workflows/release.yml/badge.svg)](https://github.com/netreconlab/ParseCertificateAuthority/actions/workflows/release.yml)
 [![codecov](https://codecov.io/gh/netreconlab/ParseCertificateAuthority/branch/main/graph/badge.svg?token=RC3FLU6BGW)](https://codecov.io/gh/netreconlab/ParseCertificateAuthority)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/netreconlab/ParseCertificateAuthority/blob/main/LICENSE)
