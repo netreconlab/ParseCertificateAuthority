@@ -9,7 +9,7 @@
 import Foundation
 @testable import ParseSwift
 
-struct MockURLResponse {
+struct MockURLResponse: Sendable {
     var statusCode: Int = 200
     var headerFields = [String: String]()
     var responseData: Data?
