@@ -22,9 +22,9 @@ jobs:
     - name: Install SwiftLint
       run: brew install swiftlint
     - name: Lint
-      run: swiftlint --strict
+      run: set -o pipefail && env NSUnbufferedIO=YES swiftlint --strict
     - name: Build and Test
-      run: swift test --enable-code-coverage 2>&1 | xcbeautify --renderer github-actions
+      run: set -o pipefail && env NSUnbufferedIO=YES swift test --enable-code-coverage 2>&1 | xcbeautify --renderer github-actions
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE }}
     - name: Prepare codecov
