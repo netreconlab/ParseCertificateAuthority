@@ -14,13 +14,15 @@ import ParseSwift
 extension URLSession {
     func dataTask(for request: URLRequest) async throws -> (Data, URLResponse) {
         try await withCheckedThrowingContinuation { continuation in
-            self.dataTask(with: request,
-                          completionHandler: continuation.resume).resume()
+			self.dataTask(with: request, completionHandler: { continuation.resume(with: $0 ) }
+			).resume()
         }
     }
 
-    func dataTask(with request: URLRequest,
-                  completionHandler: @escaping (Result<(Data, URLResponse), Error>) -> Void) -> URLSessionDataTask {
+    func dataTask(
+		with request: URLRequest,
+		completionHandler: @escaping @Sendable (Result<(Data, URLResponse), Error>) -> Void
+	) -> URLSessionDataTask {
         return dataTask(with: request) { (data, response, error) in
             guard let data = data,
                   let response = response else {

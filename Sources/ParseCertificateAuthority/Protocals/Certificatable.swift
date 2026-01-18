@@ -16,7 +16,7 @@ import ParseSwift
  and methods to support certificates and communicating with a
  [ca-server](https://github.com/netreconlab/ca-server).
  */
-public protocol Certificatable: Hashable {
+public protocol Certificatable: Hashable, Sendable {
     /// The root certificate that signed the `csr` and turned it into a `certificate`.
     var rootCertificate: String? { get set }
 
@@ -60,8 +60,10 @@ public extension Certificatable {
      - note: This is useful when certificates need to be created for the first time. If an object
      already has both certificates, it will simply return the current certificates.
      */
-    func getCertificates(_ userId: String?,
-                         createUserAccountIfNeeded: Bool = true) async throws -> (String?, String?) {
+    func getCertificates(
+		_ userId: String?,
+		createUserAccountIfNeeded: Bool = true
+	) async throws -> (String?, String?) {
 
         guard let userId = userId,
               let certificateId = self.certificateId,
@@ -113,8 +115,10 @@ public extension Certificatable {
      - throws: An error of `ParseError` type.
      - note: This is useful for when certificates have expired.
      */
-    func requestNewCertificates(_ userId: String?,
-                                createUserAccountIfNeeded: Bool = false) async throws -> (String?, String?) {
+    func requestNewCertificates(
+		_ userId: String?,
+		createUserAccountIfNeeded: Bool = false
+	) async throws -> (String?, String?) {
 
         guard let userId = userId,
               let certificateId = self.certificateId,
@@ -149,10 +153,12 @@ public extension Certificatable {
 // MARK: Internal
 extension Certificatable {
 
-    func restfullCertificates(httpMethod: RestMethod,
-                              body: CAServerBody? = nil,
-                              certificateType: CertificateType,
-                              certificateId: String? = nil) async throws -> String {
+    func restfullCertificates(
+		httpMethod: RestMethod,
+		body: CAServerBody? = nil,
+		certificateType: CertificateType,
+		certificateId: String? = nil
+	) async throws -> String {
 
         if certificateType == .root && httpMethod != .GET {
             throw ParseError(code: .otherCause,
@@ -183,8 +189,10 @@ extension Certificatable {
 
     }
 
-    func verifyAndCreateUserOnCA(userId: String,
-                                 createUserAccountIfNeeded: Bool) async throws {
+    func verifyAndCreateUserOnCA(
+		userId: String,
+		createUserAccountIfNeeded: Bool
+	) async throws {
 
         do {
             try await restfullAppUsers(httpMethod: .GET, userId: userId)
@@ -200,9 +208,11 @@ extension Certificatable {
 
     }
 
-    func restfullAppUsers(httpMethod: RestMethod,
-                          body: CAServerBody? = nil,
-                          userId: String?) async throws {
+    func restfullAppUsers(
+		httpMethod: RestMethod,
+		body: CAServerBody? = nil,
+		userId: String?
+	) async throws {
 
         let url: URL!
         if let userId = userId {
@@ -222,9 +232,11 @@ extension Certificatable {
 
     }
 
-    func prepareRequest<V: Encodable>(_ url: URL,
-                                      method: RestMethod,
-                                      body: V?) throws -> URLRequest {
+    func prepareRequest<V: Encodable & Sendable>(
+		_ url: URL,
+		method: RestMethod,
+		body: V?
+	) throws -> URLRequest {
 
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue

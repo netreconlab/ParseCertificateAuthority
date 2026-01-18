@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum RestMethod: String {
+enum RestMethod: String, Hashable, Sendable {
     case GET
     case POST
     case PUT
 }
 
-enum CertificateType: String {
+enum CertificateType: String, Hashable, Sendable {
     case root
     case user
 }

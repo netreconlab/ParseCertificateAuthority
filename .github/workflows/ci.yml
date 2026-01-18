@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 
 env:
-  CI_XCODE: '/Applications/Xcode_15.4.app/Contents/Developer'
+  CI_XCODE: '/Applications/Xcode_26.1.app/Contents/Developer'
 
 concurrency:
    group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,15 +16,15 @@ concurrency:
 
 jobs:
   spm-test:
-    runs-on: macos-14
+    runs-on: macos-26
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Install SwiftLint
       run: brew install swiftlint
     - name: Lint
-      run: swiftlint --strict
+      run: set -o pipefail && env NSUnbufferedIO=YES swiftlint --strict
     - name: Build and Test
-      run: swift test --enable-code-coverage
+      run: set -o pipefail && env NSUnbufferedIO=YES swift test --enable-code-coverage 2>&1 | xcbeautify --renderer github-actions
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE }}
     - name: Prepare codecov
@@ -48,30 +48,19 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: sersoft-gmbh/SwiftyActions@v3
+      - uses: actions/checkout@v6
+      - uses: vapor/swiftly-action@v0.2
         with:
-          release-version: "5"
+          release-version: "6.2.3"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and Test
-        run: swift test --enable-code-coverage
-      - name: Update codecov config
-        run: cat .codecov.yml | curl --data-binary @- https://codecov.io/validate
-      - name: Prepare codecov
-        run: |
-          llvm-cov export -format="lcov" .build/x86_64-unknown-linux-gnu/debug/ParseCertificateAuthorityPackageTests.xctest -instr-profile .build/x86_64-unknown-linux-gnu/debug/codecov/default.profdata > info_linux.lcov
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          env_vars: LINUX
-          fail_ci_if_error: true
-          token: ${{ secrets.CODECOV_TOKEN }}
+        run: set -o pipefail && env NSUnbufferedIO=YES swift test --enable-code-coverage
 
   docs:
     timeout-minutes: 20
-    runs-on: macos-14
+    runs-on: macos-26
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Generate Docs
         run: set -o pipefail && env NSUnbufferedIO=YES Scripts/generate-documentation
         env:

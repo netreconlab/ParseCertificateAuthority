@@ -1,4 +1,4 @@
-// swift-tools-version: 5.5.2
+// swift-tools-version: 6.0
 
 import PackageDescription
 
@@ -14,21 +14,28 @@ let package = Package(
     products: [
         .library(
             name: "ParseCertificateAuthority",
-            targets: ["ParseCertificateAuthority"])
+            targets: ["ParseCertificateAuthority"]
+		)
     ],
     dependencies: [
-        .package(url: "https://github.com/netreconlab/Parse-Swift.git",
-                 .upToNextMajor(from: "5.8.1"))
+        .package(
+			url: "https://github.com/netreconlab/Parse-Swift.git",
+			.upToNextMajor(from: "6.0.0")
+		)
     ],
     targets: [
         .target(
             name: "ParseCertificateAuthority",
             dependencies: [
-                .product(name: "ParseSwift", package: "Parse-Swift")
+                .product(
+					name: "ParseSwift",
+					package: "Parse-Swift"
+				)
             ]
         ),
         .testTarget(
             name: "ParseCertificateAuthorityTests",
-            dependencies: ["ParseCertificateAuthority"])
+            dependencies: ["ParseCertificateAuthority"]
+		)
     ]
 )

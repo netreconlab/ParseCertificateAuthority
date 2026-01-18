@@ -8,8 +8,8 @@
 import Foundation
 import ParseSwift
 
-/// The configuratoin for `ParseCertificateAuthority`.
-public struct ParseCertificateAuthorityConfiguration {
+/// The configuration for `ParseCertificateAuthority`.
+public struct ParseCertificateAuthorityConfiguration: Hashable, Sendable {
 
     /// The full URL of the **ca-server** to access the root certificate.
     public internal(set) var caRootCertificateURL: URL
@@ -26,10 +26,12 @@ public struct ParseCertificateAuthorityConfiguration {
      - parameter caUsersPath: The **ca-server** path to access users.
      - throws: An error of `ParseError` type.
      */
-    public init(caURLString: String,
-                caRootCertificatePath: String = "/ca_certificate",
-                caCertificatesPath: String = "/certificates/",
-                caUsersPath: String = "/appusers/") throws {
+    public init(
+		caURLString: String,
+		caRootCertificatePath: String = "/ca_certificate",
+		caCertificatesPath: String = "/certificates/",
+		caUsersPath: String = "/appusers/"
+	) throws {
         guard let caRootCertificateURL = URL(string: caURLString + caRootCertificatePath) else {
             throw ParseError(code: .otherCause,
                              message: "Could not create a url for \(caURLString + caRootCertificatePath)")
