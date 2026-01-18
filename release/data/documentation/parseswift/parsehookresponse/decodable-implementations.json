@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Decodable Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookResponse\/init(from:)"
@@ -144,11 +146,19 @@
         "type" : "codeVoice"
       },
       {
+        "text" : ", ",
+        "type" : "text"
+      },
+      {
+        "code" : "Hashable",
+        "type" : "codeVoice"
+      },
+      {
         "text" : ", and ",
         "type" : "text"
       },
       {
-        "code" : "Equatable",
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {

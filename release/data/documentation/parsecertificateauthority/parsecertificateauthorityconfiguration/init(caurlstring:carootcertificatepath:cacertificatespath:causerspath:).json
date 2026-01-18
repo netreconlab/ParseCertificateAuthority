@@ -393,7 +393,7 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificateAuthorityConfiguration": {
   "abstract" : [
     {
-      "text" : "The configuratoin for ",
+      "text" : "The configuration for ",
       "type" : "text"
     },
     {

@@ -78,6 +78,17 @@
       "kind" : "declarations"
     }
   ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -88,18 +99,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFileManager\/init()"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFileManager\/defaultDataDirectoryPath"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFileManager\/downloadDirectory()",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFileManager\/fileExists(_:)-3nh5r",
@@ -432,6 +449,16 @@
   "title" : "init()",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsefilemanager\/init()"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

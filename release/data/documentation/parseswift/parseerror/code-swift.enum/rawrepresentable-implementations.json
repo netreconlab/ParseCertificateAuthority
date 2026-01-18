@@ -20,6 +20,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "RawRepresentable Implementations"
   },
   "schemaVersion" : {
@@ -32,6 +33,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/init(from:)"
@@ -39,6 +41,7 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/hashValue"
@@ -46,6 +49,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/encode(to:)",
@@ -238,7 +242,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -512,7 +516,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

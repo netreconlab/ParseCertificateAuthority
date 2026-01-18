@@ -85,7 +85,9 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -102,6 +104,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseOperationCommand\/add",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseOperationCommand\/addRelation",
@@ -115,12 +119,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseOperationCommand\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseOperationCommand\/Equatable-Implementations",
@@ -496,6 +503,16 @@
   "title" : "ParseOperationCommand.removeRelation",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parseoperationcommand\/removerelation"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

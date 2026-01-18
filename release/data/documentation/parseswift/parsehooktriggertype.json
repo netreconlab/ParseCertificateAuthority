@@ -85,7 +85,9 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -102,6 +104,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/afterDelete",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/afterEvent",
@@ -113,18 +117,22 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforeDelete",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforeFind",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforeLogin",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforePasswordResetRequest",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforeSave",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforeSubscribe"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/Equatable-Implementations",
@@ -330,6 +338,14 @@
       "type" : "codeVoice"
     },
     {
+      "text" : " or ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseFile",
+      "type" : "codeVoice"
+    },
+    {
       "text" : ".",
       "type" : "text"
     }
@@ -438,11 +454,19 @@
       "type" : "codeVoice"
     },
     {
-      "text" : " or ",
+      "text" : ", ",
       "type" : "text"
     },
     {
       "code" : "ParseFile",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", or ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseConfig",
       "type" : "codeVoice"
     },
     {
@@ -562,6 +586,14 @@
       "type" : "codeVoice"
     },
     {
+      "text" : " or ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseFile",
+      "type" : "codeVoice"
+    },
+    {
       "text" : ".",
       "type" : "text"
     }
@@ -623,6 +655,42 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsehooktriggertype\/beforelogin"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookTriggerType/beforePasswordResetRequest": {
+  "abstract" : [
+    {
+      "text" : "Occurs before password is reset on a ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseUser",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "beforePasswordResetRequest"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookTriggerType\/beforePasswordResetRequest",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ParseHookTriggerType.beforePasswordResetRequest",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/parsehooktriggertype\/beforepasswordresetrequest"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookTriggerType/beforeSave": {
   "abstract" : [
     {
@@ -634,11 +702,19 @@
       "type" : "codeVoice"
     },
     {
-      "text" : " or ",
+      "text" : ", ",
       "type" : "text"
     },
     {
       "code" : "ParseFile",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", or ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseConfig",
       "type" : "codeVoice"
     },
     {
@@ -740,6 +816,16 @@
   "title" : "init(rawValue:)",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsehooktriggertype\/init(rawvalue:)"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

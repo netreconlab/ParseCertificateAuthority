@@ -200,13 +200,17 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseEncodable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookRequestable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseTypeable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s23CustomStringConvertibleP",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/Se",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -223,12 +227,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/init(from:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/functionName",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/headers",
@@ -241,6 +249,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/getContext()",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/getLog()"
@@ -248,18 +258,20 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/UsertType"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/CustomDebugStringConvertible-Implementations",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/CustomStringConvertible-Implementations",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/Equatable-Implementations",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/ParseHookRequestable-Implementations"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/ParseHookRequestable-Implementations",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/ParseTypeable-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -281,6 +293,11 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/SE": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
   "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/SH": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
+  "title" : "Swift.Hashable",
   "type" : "unresolvable"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/SQ": {
@@ -335,6 +352,65 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parseclouduser"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseEncodable": {
+  "abstract" : [
+    {
+      "text" : "Types that conform to ",
+      "type" : "text"
+    },
+    {
+      "inlineContent" : [
+        {
+          "text" : "ParseEncodable",
+          "type" : "text"
+        }
+      ],
+      "type" : "strong"
+    },
+    {
+      "text" : " should be encoded by the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseEncoder",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " when necessary.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ParseEncodable"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseEncodable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ParseEncodable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ParseEncodable",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/parseencodable"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookFunctionRequest": {
   "abstract" : [
     {
@@ -377,28 +453,6 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsehookfunctionrequest"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookFunctionRequest/CustomDebugStringConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/CustomDebugStringConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CustomDebugStringConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parsehookfunctionrequest\/customdebugstringconvertible-implementations"
-},
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookFunctionRequest/CustomStringConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/CustomStringConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CustomStringConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parsehookfunctionrequest\/customstringconvertible-implementations"
-},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookFunctionRequest/Equatable-Implementations": {
   "abstract" : [
 
@@ -420,6 +474,17 @@
   "title" : "ParseHookRequestable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsehookfunctionrequest\/parsehookrequestable-implementations"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookFunctionRequest/ParseTypeable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookFunctionRequest\/ParseTypeable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ParseTypeable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/parsehookfunctionrequest\/parsetypeable-implementations"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookFunctionRequest/UsertType": {
   "abstract" : [
@@ -780,7 +845,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -1220,6 +1285,11 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsetypeable"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s23CustomStringConvertibleP",
   "title" : "Swift.CustomStringConvertible",
@@ -1228,6 +1298,11 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
   "type" : "unresolvable"
 }
 }

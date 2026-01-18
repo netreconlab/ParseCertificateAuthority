@@ -83,7 +83,9 @@
     {
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -100,12 +102,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/==(_:_:)"
       ],
       "title" : "Operators"
     },
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/cachePolicy(_:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/context(_:)",
@@ -117,17 +123,21 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/serverURL(_:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/sessionToken(_:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/tags(_:)",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/useMaintenanceKey",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/usePrimaryKey"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/hash(into:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/Equatable-Implementations"
@@ -434,6 +444,15 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:SE",
       "text" : "Encodable"
+    },
+    {
+      "kind" : "text",
+      "text" : " & "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8SendableP",
+      "text" : "Sendable"
     },
     {
       "kind" : "text",
@@ -834,6 +853,34 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/api\/option\/tags(_:)"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/API/Option/useMaintenanceKey": {
+  "abstract" : [
+    {
+      "text" : "Use the maintenanceKey if it was provided during initial configuraration.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "useMaintenanceKey"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/API\/Option\/useMaintenanceKey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "API.Option.useMaintenanceKey",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/api\/option\/usemaintenancekey"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/API/Option/usePrimaryKey": {
   "abstract" : [
     {
@@ -861,6 +908,16 @@
   "title" : "API.Option.usePrimaryKey",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/api\/option\/useprimarykey"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 },
 "https://developer.apple.com/documentation/foundation/url_loading_system/accessing_cached_data": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/foundation\/url_loading_system\/accessing_cached_data",

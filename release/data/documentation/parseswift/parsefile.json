@@ -101,13 +101,16 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseEncodable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseTypeable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8CopyableP",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s23CustomStringConvertibleP",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/Se",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s12IdentifiableP"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s12IdentifiableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -124,6 +127,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/init(name:cloudURL:metadata:tags:options:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/init(name:data:mimeType:metadata:tags:options:)",
@@ -132,10 +137,11 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/cloudURL",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/data",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/id",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/localURL",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/metadata",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/mimeType",
@@ -147,6 +153,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/delete(options:callbackQueue:completion:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/deletePublisher(options:)",
@@ -155,7 +163,7 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/fetch(options:progress:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/fetchPublisher(options:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/fetchPublisher(options:progress:)",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/hash(into:)",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/isSaved()",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/save(options:callbackQueue:progress:completion:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/save(options:progress:)",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/save(options:stream:callbackQueue:progress:completion:)",
@@ -165,6 +173,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/CustomDebugStringConvertible-Implementations",
@@ -172,6 +181,7 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/Decodable-Implementations",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/Deletable-Implementations",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/Equatable-Implementations",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/Identifiable-Implementations",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/Savable-Implementations"
       ],
       "title" : "Default Implementations"
@@ -416,6 +426,17 @@
   "title" : "Equatable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsefile\/equatable-implementations"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/Identifiable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/Identifiable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Identifiable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/parsefile\/identifiable-implementations"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/Savable-Implementations": {
   "abstract" : [
@@ -1399,113 +1420,6 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsefile\/fetchpublisher(options:progress:)"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/hash(into:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "hash"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "into"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "inout"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s6HasherV",
-      "text" : "Hasher"
-    },
-    {
-      "kind" : "text",
-      "text" : ")"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/hash(into:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "hash(into:)",
-  "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parsefile\/hash(into:)"
-},
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/id": {
-  "abstract" : [
-    {
-      "text" : "A computed property that is a unique identifier and makes it easy to use ",
-      "type" : "text"
-    },
-    {
-      "code" : "ParseFile",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : "’s",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "as models in MVVM and SwiftUI.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "id"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/id",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "id",
-  "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parsefile\/id"
-},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/init(name:cloudURL:metadata:tags:options:)": {
   "abstract" : [
     {
@@ -1930,6 +1844,56 @@
   "title" : "init(name:localURL:metadata:tags:options:)",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsefile\/init(name:localurl:metadata:tags:options:)"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/isSaved()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isSaved"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseFile\/isSaved()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isSaved()",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/parsefile\/issaved()"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseFile/localURL": {
   "abstract" : [
@@ -3147,6 +3111,11 @@
   "title" : "Swift.Identifiable",
   "type" : "unresolvable"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s23CustomStringConvertibleP",
   "title" : "Swift.CustomStringConvertible",
@@ -3155,6 +3124,16 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
   "type" : "unresolvable"
 }
 }

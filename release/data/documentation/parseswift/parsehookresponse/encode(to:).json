@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookResponse",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookResponse\/Encodable-Implementations"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookResponse"
       ]
     ]
   },
@@ -63,11 +62,19 @@
           "type" : "codeVoice"
         },
         {
+          "text" : ", ",
+          "type" : "text"
+        },
+        {
+          "code" : "Hashable",
+          "type" : "codeVoice"
+        },
+        {
           "text" : ", and ",
           "type" : "text"
         },
         {
-          "code" : "Equatable",
+          "code" : "Sendable",
           "type" : "codeVoice"
         },
         {
@@ -276,17 +283,6 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsehookresponse"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookResponse/Encodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseHookResponse\/Encodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Encodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parsehookresponse\/encodable-implementations"
-},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseHookResponse/encode(to:)": {
   "abstract" : [
 
@@ -326,11 +322,19 @@
         "type" : "codeVoice"
       },
       {
+        "text" : ", ",
+        "type" : "text"
+      },
+      {
+        "code" : "Hashable",
+        "type" : "codeVoice"
+      },
+      {
         "text" : ", and ",
         "type" : "text"
       },
       {
-        "code" : "Equatable",
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {

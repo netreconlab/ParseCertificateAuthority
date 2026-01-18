@@ -86,7 +86,9 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -103,6 +105,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushPayloadFirebase\/PushPriority\/high",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushPayloadFirebase\/PushPriority\/normal"
@@ -110,12 +114,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushPayloadFirebase\/PushPriority\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushPayloadFirebase\/PushPriority\/Equatable-Implementations",
@@ -404,6 +411,16 @@
   "title" : "ParsePushPayloadFirebase.PushPriority.normal",
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parsepushpayloadfirebase\/pushpriority\/normal"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 },
 "https://firebase.google.com/docs/cloud-messaging/http-server-ref": {
   "identifier" : "https:\/\/firebase.google.com\/docs\/cloud-messaging\/http-server-ref",

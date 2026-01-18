@@ -99,7 +99,9 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SE",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SQ",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s12IdentifiableP"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s12IdentifiableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -116,9 +118,11 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/accountLockoutExpiresAt-2drtq",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/failedLoginCount-9kljm",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/accountLockoutExpiresAt",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/failedLoginCount",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/sessionToken"
       ],
       "title" : "Instance Properties"
@@ -304,7 +308,7 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/parseclouduser"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser/accountLockoutExpiresAt-2drtq": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser/accountLockoutExpiresAt": {
   "abstract" : [
     {
       "text" : "The date the lockout expires. After this date, the ",
@@ -351,15 +355,15 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/accountLockoutExpiresAt-2drtq",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/accountLockoutExpiresAt",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "accountLockoutExpiresAt",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parseclouduser\/accountlockoutexpiresat-2drtq"
+  "url" : "\/documentation\/parseswift\/parseclouduser\/accountlockoutexpiresat"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser/failedLoginCount-9kljm": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser/failedLoginCount": {
   "abstract" : [
     {
       "text" : "The number of unsuccessful login attempts.",
@@ -394,13 +398,13 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/failedLoginCount-9kljm",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseCloudUser\/failedLoginCount",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "failedLoginCount",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/parseclouduser\/failedlogincount-9kljm"
+  "url" : "\/documentation\/parseswift\/parseclouduser\/failedlogincount"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseCloudUser/sessionToken": {
   "abstract" : [
@@ -713,6 +717,11 @@
   "title" : "Swift.Identifiable",
   "type" : "unresolvable"
 },
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s23CustomStringConvertibleP",
   "title" : "Swift.CustomStringConvertible",
@@ -721,6 +730,11 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s8SendableP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+  "title" : "Swift.Sendable",
   "type" : "unresolvable"
 }
 }

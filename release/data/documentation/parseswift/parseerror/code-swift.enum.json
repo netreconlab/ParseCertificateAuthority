@@ -117,7 +117,8 @@
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s5ErrorP",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SH",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/SY",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s8SendableP",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -134,6 +135,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/accountAlreadyLinked",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/aggregateError",
@@ -216,12 +219,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseError\/Code-swift.enum\/Equatable-Implementations",
@@ -2783,6 +2789,11 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s12CaseIterableP": {
   "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s12CaseIterableP",
   "title" : "Swift.CaseIterable",
+  "type" : "unresolvable"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/s5ErrorP": {

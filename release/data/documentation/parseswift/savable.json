@@ -126,15 +126,20 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Associated-Types",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/SavingType"
       ],
       "title" : "Associated Types"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()-51ej7",
-        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)-15f1x"
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/isSaved()",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)"
       ],
       "title" : "Instance Methods"
     }
@@ -950,7 +955,58 @@
   "type" : "topic",
   "url" : "\/documentation\/parseswift\/savable\/savingtype"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save()-51ej7": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/isSaved()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isSaved"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/isSaved()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "isSaved()",
+  "type" : "topic",
+  "url" : "\/documentation\/parseswift\/savable\/issaved()"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save()": {
   "abstract" : [
 
   ],
@@ -994,15 +1050,15 @@
       "text" : "SavingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()-51ej7",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save()",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "save()",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/savable\/save()-51ej7"
+  "url" : "\/documentation\/parseswift\/savable\/save()"
 },
-"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save(options:)-15f1x": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/Savable/save(options:)": {
   "abstract" : [
 
   ],
@@ -1072,13 +1128,13 @@
       "text" : "SavingType"
     }
   ],
-  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)-15f1x",
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/Savable\/save(options:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "save(options:)",
   "type" : "topic",
-  "url" : "\/documentation\/parseswift\/savable\/save(options:)-15f1x"
+  "url" : "\/documentation\/parseswift\/savable\/save(options:)"
 },
 "https://github.com/netreconlab/ca-server": {
   "identifier" : "https:\/\/github.com\/netreconlab\/ca-server",

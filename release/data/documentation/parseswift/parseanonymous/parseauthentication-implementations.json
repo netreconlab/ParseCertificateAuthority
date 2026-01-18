@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "ParseAuthentication Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseAnonymous\/isLinked()",
@@ -51,6 +53,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseAnonymous\/isLinked(with:)"
@@ -605,20 +608,7 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParseAnonymous/linkPublisher(authData:options:)": {
   "abstract" : [
     {
-      "text" : "Link the ",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : "current",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : " ",
+      "text" : "Link a ",
       "type" : "text"
     },
     {
@@ -639,7 +629,7 @@
       "type" : "emphasis"
     },
     {
-      "text" : " using the respective authentication type. Publishes when complete.",
+      "text" : " using the respective authentication type.",
       "type" : "text"
     }
   ],
@@ -1002,6 +992,22 @@
     },
     {
       "text" : " using the respective authentication type.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "- parameter authData: The authData for the respective authentication type. This will be ignored.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "- parameter options: A set of header options sent to the server. Defaults to an empty set.",
       "type" : "text"
     }
   ],

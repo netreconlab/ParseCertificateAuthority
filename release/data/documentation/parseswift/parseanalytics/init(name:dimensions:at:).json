@@ -19,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:10ParseSwift0A9AnalyticsV4name10dimensions2atACSS_SDySSSe_SEpGSg10Foundation4DateVSgtcfc",
+    "externalID" : "s:10ParseSwift0A9AnalyticsV4name10dimensions2atACSS_SDySSSe_SEs8SendablepGSg10Foundation4DateVSgtcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -67,6 +67,15 @@
         "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:s7Codablea",
         "text" : "Codable"
+      },
+      {
+        "kind" : "text",
+        "text" : " & "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8SendableP",
+        "text" : "Sendable"
       },
       {
         "kind" : "text",
@@ -160,6 +169,15 @@
             },
             {
               "kind" : "text",
+              "text" : " & "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8SendableP",
+              "text" : "Sendable"
+            },
+            {
+              "kind" : "text",
               "text" : "]? = nil, "
             },
             {
@@ -230,36 +248,6 @@
             }
           ],
           "name" : "dimensions"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Explicitly set the time associated with a given event. If not provided the server",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "time will be used. Defaults to ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nil",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ".",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "at"
         }
       ]
     }
@@ -389,6 +377,15 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:s7Codablea",
       "text" : "Codable"
+    },
+    {
+      "kind" : "text",
+      "text" : " & "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8SendableP",
+      "text" : "Sendable"
     },
     {
       "kind" : "text",

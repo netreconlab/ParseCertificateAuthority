@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Objectable Implementations"
   },
   "schemaVersion" : {
@@ -31,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushStatus\/className",
@@ -40,6 +42,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParsePushStatus\/endpoint(_:)",
@@ -97,10 +100,7 @@
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParsePushStatus/className": {
   "abstract" : [
-    {
-      "text" : "The class name of the object.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -134,7 +134,10 @@
 },
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseSwift/ParsePushStatus/endpoint": {
   "abstract" : [
-
+    {
+      "text" : "The Parse Server endpoint for this object.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

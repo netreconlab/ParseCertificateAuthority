@@ -48,7 +48,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:10ParseSwift0A9AnalyticsV14trackAppOpened13launchOptions2at7options13callbackQueue10completionySDySo019UIApplicationLaunchH3KeyaypG_10Foundation4DateVSgShyAA3APIV6OptionOGSo17OS_dispatch_queueCys6ResultOyytAA0A5ErrorVGctFZ",
+    "externalID" : "s:10ParseSwift0A9AnalyticsV14trackAppOpened13launchOptions2at7options13callbackQueue10completionySDySo019UIApplicationLaunchH3Keyas8Sendable_pG_10Foundation4DateVSgShyAA3APIV6OptionOGSo17OS_dispatch_queueCys6ResultOyytAA0A5ErrorVGYbctFZ",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -101,8 +101,9 @@
         "text" : " : "
       },
       {
-        "kind" : "keyword",
-        "text" : "Any"
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8SendableP",
+        "text" : "Sendable"
       },
       {
         "kind" : "text",
@@ -285,8 +286,9 @@
               "text" : " : "
             },
             {
-              "kind" : "keyword",
-              "text" : "Any"
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8SendableP",
+              "text" : "Sendable"
             },
             {
               "kind" : "text",
@@ -464,28 +466,6 @@
             }
           ],
           "name" : "launchOptions"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Explicitly set the time associated with a given event. If not provided the",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "server time will be used.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "at"
         },
         {
           "content" : [
@@ -826,8 +806,9 @@
       "text" : " : "
     },
     {
-      "kind" : "keyword",
-      "text" : "Any"
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8SendableP",
+      "text" : "Sendable"
     },
     {
       "kind" : "text",

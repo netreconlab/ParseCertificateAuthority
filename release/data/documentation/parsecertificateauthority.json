@@ -33,6 +33,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Protocols",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/Certificatable",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificatable"
@@ -40,18 +42,24 @@
       "title" : "Protocols"
     },
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificateAuthorityConfiguration"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Variables",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/configuration"
       ],
       "title" : "Variables"
     },
     {
+      "anchor" : "Functions",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/initialize(configuration:)"
       ],
@@ -224,7 +232,7 @@
 "doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificateAuthorityConfiguration": {
   "abstract" : [
     {
-      "text" : "The configuratoin for ",
+      "text" : "The configuration for ",
       "type" : "text"
     },
     {

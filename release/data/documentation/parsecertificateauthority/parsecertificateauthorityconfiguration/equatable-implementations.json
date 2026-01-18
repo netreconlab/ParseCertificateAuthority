@@ -1,0 +1,161 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority",
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificateAuthorityConfiguration"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificateAuthorityConfiguration\/Equatable-Implementations"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "ParseCertificateAuthority"
+      }
+    ],
+    "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
+    "title" : "Equatable Implementations"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Operators",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificateAuthorityConfiguration\/!=(_:_:)"
+      ],
+      "title" : "Operators"
+    }
+  ]
+, 
+"references": {
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ParseCertificateAuthority",
+  "type" : "topic",
+  "url" : "\/documentation\/parsecertificateauthority"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificateAuthorityConfiguration": {
+  "abstract" : [
+    {
+      "text" : "The configuration for ",
+      "type" : "text"
+    },
+    {
+      "code" : "ParseCertificateAuthority",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ParseCertificateAuthorityConfiguration"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificateAuthorityConfiguration",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ParseCertificateAuthorityConfiguration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ParseCertificateAuthorityConfiguration",
+  "type" : "topic",
+  "url" : "\/documentation\/parsecertificateauthority\/parsecertificateauthorityconfiguration"
+},
+"doc://edu.uky.cs.netreconlab.ParseCertificateAuthority/documentation/ParseCertificateAuthority/ParseCertificateAuthorityConfiguration/!=(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "!="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseCertificateAuthority\/ParseCertificateAuthorityConfiguration\/!=(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "!=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/parsecertificateauthority\/parsecertificateauthorityconfiguration\/!=(_:_:)"
+}
+}
+}

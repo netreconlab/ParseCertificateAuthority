@@ -175,6 +175,23 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:SE",
               "text" : "Encodable"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "V"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8SendableP",
+              "text" : "Sendable"
             }
           ]
         }
@@ -239,6 +256,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseConfigCodable\/current()",
         "doc:\/\/edu.uky.cs.netreconlab.ParseCertificateAuthority\/documentation\/ParseSwift\/ParseConfigCodable\/fetch(options:)",
@@ -398,11 +417,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
@@ -525,11 +552,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
@@ -678,11 +713,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
@@ -867,11 +910,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
@@ -1022,11 +1073,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
@@ -1180,11 +1239,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
@@ -1378,11 +1445,19 @@
         "type" : "codeVoice"
       },
       {
-        "text" : " and ",
+        "text" : ", ",
         "type" : "text"
       },
       {
         "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ", and ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
         "type" : "codeVoice"
       },
       {
