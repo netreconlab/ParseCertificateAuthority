@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CAServerBody: Codable {
+struct CAServerBody: Codable, Hashable, Sendable {
     var user: String
     var certificateId: String?
     var csr: String?

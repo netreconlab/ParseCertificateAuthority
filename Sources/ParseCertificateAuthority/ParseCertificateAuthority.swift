@@ -23,5 +23,18 @@ public var configuration: ParseCertificateAuthorityConfiguration {
 }
 
 internal struct ParseCA {
-    static var configuration: ParseCertificateAuthorityConfiguration!
+	static var configuration: ParseCertificateAuthorityConfiguration! {
+		get {
+			lock.lock()
+			defer { lock.unlock() }
+			return _configuration
+		}
+		set {
+			lock.lock()
+			defer { lock.unlock() }
+			_configuration = newValue
+		}
+	}
+	nonisolated(unsafe) static var _configuration: ParseCertificateAuthorityConfiguration!
+	private static let lock = NSLock()
 }
