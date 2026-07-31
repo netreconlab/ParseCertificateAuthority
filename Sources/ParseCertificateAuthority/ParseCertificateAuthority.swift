@@ -18,7 +18,7 @@ public func initialize(configuration: ParseCertificateAuthorityConfiguration) {
 }
 
 /// The current `ParseCertificateAuthorityConfiguration` for `ParseCertificateAuthority`.
-public var configuration: ParseCertificateAuthorityConfiguration {
+public var configuration: ParseCertificateAuthorityConfiguration! {
     ParseCA.configuration
 }
 
