@@ -247,7 +247,6 @@ extension Certificatable {
 				message: "ParseCertificateAuthority is not initialized. Initialize before using CA APIs."
 			)
 		}
-
 		if certificateType == .root {
 			return configuration.caRootCertificateURL
 		} else if let certificateId = certificateId {
