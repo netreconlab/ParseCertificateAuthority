@@ -244,7 +244,7 @@ extension Certificatable {
 		guard let configuration = ParseCA.configuration else {
 			throw ParseError(
 				code: .otherCause,
-				message: "Configuration is nil"
+				message: "ParseCertificateAuthority is not initialized. Call ParseCertificateAuthority.initialize(configuration:) before using CA APIs."
 			)
 		}
 
@@ -253,7 +253,7 @@ extension Certificatable {
 		} else if let certificateId = certificateId {
 			return configuration.caCertificatesURL.appendingPathComponent(certificateId)
 		} else {
-			return ParseCA.configuration.caCertificatesURL
+			return configuration.caCertificatesURL
 		}
 	}
 
@@ -263,15 +263,15 @@ extension Certificatable {
 		guard let configuration = ParseCA.configuration else {
 			throw ParseError(
 				code: .otherCause,
-				message: "Configuration is nil"
+				message: "ParseCertificateAuthority is not initialized. Call ParseCertificateAuthority.initialize(configuration:) before using CA APIs."
 			)
 		}
 
 		guard let userId = userId else {
-			return ParseCA.configuration.caUsersPathURL
+			return configuration.caUsersPathURL
 		}
 
-		return ParseCA.configuration.caUsersPathURL.appendingPathComponent(userId)
+		return configuration.caUsersPathURL.appendingPathComponent(userId)
 	}
 
     func prepareRequest<V: Encodable & Sendable>(
