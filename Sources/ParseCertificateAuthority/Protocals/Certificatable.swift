@@ -244,7 +244,7 @@ extension Certificatable {
 		guard let configuration = ParseCA.configuration else {
 			throw ParseError(
 				code: .otherCause,
-				message: "ParseCertificateAuthority is not initialized. Call ParseCertificateAuthority.initialize(configuration:) before using CA APIs."
+				message: "ParseCertificateAuthority is not initialized. Initialize before using CA APIs."
 			)
 		}
 
@@ -263,7 +263,7 @@ extension Certificatable {
 		guard let configuration = ParseCA.configuration else {
 			throw ParseError(
 				code: .otherCause,
-				message: "ParseCertificateAuthority is not initialized. Call ParseCertificateAuthority.initialize(configuration:) before using CA APIs."
+				message: "ParseCertificateAuthority is not initialized. Initialize before using CA APIs."
 			)
 		}
 
