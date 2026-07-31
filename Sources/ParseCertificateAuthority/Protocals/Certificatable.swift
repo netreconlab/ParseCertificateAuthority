@@ -161,20 +161,22 @@ extension Certificatable {
 	) async throws -> String {
 
         if certificateType == .root && httpMethod != .GET {
-            throw ParseError(code: .otherCause,
-                             message: "Can only GET Root certificate from CA.")
+            throw ParseError(
+				code: .otherCause,
+				message: "Can only GET Root certificate from CA."
+			)
         }
 
-        let url: URL!
-        if certificateType == .root {
-            url = ParseCA.configuration.caRootCertificateURL
-        } else if let certificateId = certificateId {
-            url = ParseCA.configuration.caCertificatesURL.appendingPathComponent(certificateId)
-        } else {
-            url = ParseCA.configuration.caCertificatesURL
-        }
+        let url = try buildURL(
+			for: certificateType,
+			with: certificateId
+		)
 
-        let request = try prepareRequest(url, method: httpMethod, body: body)
+        let request = try prepareRequest(
+			url,
+			method: httpMethod,
+			body: body
+		)
 
         let (data, response) = try await URLSession.shared.dataTask(for: request)
         guard let httpResponse = response as? HTTPURLResponse,
@@ -201,9 +203,11 @@ extension Certificatable {
                 throw error
             }
             let body = CAServerBody(user: userId)
-            try await restfullAppUsers(httpMethod: .POST,
-                                       body: body,
-                                       userId: nil)
+            try await restfullAppUsers(
+				httpMethod: .POST,
+				body: body,
+				userId: nil
+			)
         }
 
     }
@@ -214,23 +218,61 @@ extension Certificatable {
 		userId: String?
 	) async throws {
 
-        let url: URL!
-        if let userId = userId {
-            url = ParseCA.configuration.caUsersPathURL.appendingPathComponent(userId)
-        } else {
-            url = ParseCA.configuration.caUsersPathURL
-        }
+        let url = try buildURLForUser(userId)
 
-        let request = try prepareRequest(url, method: httpMethod, body: body)
+        let request = try prepareRequest(
+			url,
+			method: httpMethod,
+			body: body
+		)
 
         let (_, response) = try await URLSession.shared.dataTask(for: request)
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
-            throw ParseError(code: .otherCause,
-                             message: "Response from CA: \(response)")
+            throw ParseError(
+				code: .otherCause,
+				message: "Response from CA: \(response)"
+			)
         }
 
     }
+
+	func buildURL(
+		for certificateType: CertificateType,
+		with certificateId: String?
+	) throws -> URL {
+		guard let configuration = ParseCA.configuration else {
+			throw ParseError(
+				code: .otherCause,
+				message: "Configuration is nil"
+			)
+		}
+
+		if certificateType == .root {
+			return configuration.caRootCertificateURL
+		} else if let certificateId = certificateId {
+			return configuration.caCertificatesURL.appendingPathComponent(certificateId)
+		} else {
+			return ParseCA.configuration.caCertificatesURL
+		}
+	}
+
+	func buildURLForUser(
+		_ userId: String?
+	) throws -> URL {
+		guard let configuration = ParseCA.configuration else {
+			throw ParseError(
+				code: .otherCause,
+				message: "Configuration is nil"
+			)
+		}
+
+		guard let userId = userId else {
+			return ParseCA.configuration.caUsersPathURL
+		}
+
+		return ParseCA.configuration.caUsersPathURL.appendingPathComponent(userId)
+	}
 
     func prepareRequest<V: Encodable & Sendable>(
 		_ url: URL,
